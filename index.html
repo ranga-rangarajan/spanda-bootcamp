@@ -1,0 +1,2925 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
+    
+    
+      
+        <title>Spanda DL Bootcamp</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#accessing-models-with-apis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Spanda DL Bootcamp" class="md-header__button md-logo" aria-label="Spanda DL Bootcamp" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Spanda DL Bootcamp
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Spanda DL Bootcamp" class="md-nav__button md-logo" aria-label="Spanda DL Bootcamp" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Spanda DL Bootcamp
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-models-with-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Models with APIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing Models with APIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#devops-the-confluence-of-development-operations-and-quality-assurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps: The Confluence of Development, Operations, and Quality Assurance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-responsible-and-fair-data-collection-in-this-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Responsible and FAIR Data Collection in this context
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Responsible and FAIR Data Collection in this context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fair-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAIR sharing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evolution-of-the-data-lakehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evolution of the Data Lakehouse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-does-a-data-lake-house-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Does a Data Lake House Do?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-a-data-lake-house-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Does a Data Lake House Work?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elements-of-a-data-lakehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elements of a Data Lakehouse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-data-lake" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Data Lake
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-data-warehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Data Warehouse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-of-the-data-lakehouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future of the Data Lakehouse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difference-between-model-testing-and-model-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference between model testing and model evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-you-write-model-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do you write model tests?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How do you write model tests?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-train-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-train tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-train-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-train tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizing-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-large-language-models-with-wb-and-giskard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Large Language Models with W&amp;B and Giskard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Large Language Models with W&B and Giskard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#giskards-vulnerability-scanning-for-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Giskard's vulnerability scanning for LLMs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wb-traces-for-debugging-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      **W&amp;B Traces for Debugging LLMs: **
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#httpsgithubcomkeshavaspandallama-in-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      https://github.com/keshavaspanda/llama-in-a-container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-tuning-and-serving-up-llms-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training, Tuning and Serving up LLMs in production:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serving-up-llms-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serving up LLMs in production:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trainingfine-tuning-large-language-models-llms-the-first-pass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training/Fine-Tuning Large Language Models (LLMs) - The First Pass
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consider-the-huggingface-transformers-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consider the HuggingFace Transformers Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-torchtextdatasets-import-ag_news" class="md-nav__link">
+    <span class="md-ellipsis">
+      from torchtext.datasets import AG_NEWS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-transformers-import-automodelwithlmhead-adamw" class="md-nav__link">
+    <span class="md-ellipsis">
+      from transformers import AutoModelWithLMHead, AdamW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-transformers-import-autotokenizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      from transformers import AutoTokenizer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epochs-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPOCHS = 50
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-preprocess_datadata_iter" class="md-nav__link">
+    <span class="md-ellipsis">
+      def preprocess_data(data_iter):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-tokenizerencodetext-for-_-text-in-data_iter" class="md-nav__link">
+    <span class="md-ellipsis">
+      data = [tokenizer.encode(text) for _, text in data_iter]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      return data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train_iter-ag_newssplittrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      train_iter = AG_NEWS(split='train')
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train_data-preprocess_datatrain_iter" class="md-nav__link">
+    <span class="md-ellipsis">
+      train_data = preprocess_data(train_iter)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-automodelwithlmheadfrom_pretrainedgpt2" class="md-nav__link">
+    <span class="md-ellipsis">
+      model = AutoModelWithLMHead.from_pretrained("gpt2")
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizer-adamwmodelparameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      optimizer = AdamW(model.parameters())
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeltrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      model.train()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-epoch-in-rangeepochs" class="md-nav__link">
+    <span class="md-ellipsis">
+      for epoch in range(EPOCHS):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-batch-in-train_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      for batch in train_data:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outputs-modelbatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputs = model(batch)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loss-outputsloss" class="md-nav__link">
+    <span class="md-ellipsis">
+      loss = outputs.loss
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lossbackward" class="md-nav__link">
+    <span class="md-ellipsis">
+      loss.backward()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizerstep" class="md-nav__link">
+    <span class="md-ellipsis">
+      optimizer.step()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizerzero_grad" class="md-nav__link">
+    <span class="md-ellipsis">
+      optimizer.zero_grad()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-tokenizerencodewrite-a-summary-of-the-new-features-in-the-latest-release-of-the-julia-programming-language-return_tensorspt" class="md-nav__link">
+    <span class="md-ellipsis">
+      prompt = tokenizer.encode("Write a summary of the new features in the latest release of the Julia Programming Language", return_tensors="pt")
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-modelgenerateprompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      generated = model.generate(prompt)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated_text-tokenizerdecodegenerated0" class="md-nav__link">
+    <span class="md-ellipsis">
+      generated_text = tokenizer.decode(generated[0])
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-opengeneratedtxt-w-as-f" class="md-nav__link">
+    <span class="md-ellipsis">
+      with open("generated.txt", "w") as f:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fwritegenerated_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      f.write(generated_text)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-torchtextdatasets-import-ag_news_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      from torchtext.datasets import AG_NEWS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-transformers-import-automodelwithlmhead-adamw_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      from transformers import AutoModelWithLMHead, AdamW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-transformers-import-autotokenizer_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      from transformers import AutoTokenizer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokenizer-autotokenizerfrom_pretrainedgpt2" class="md-nav__link">
+    <span class="md-ellipsis">
+      tokenizer = AutoTokenizer.from_pretrained("gpt2")
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epochs-50_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPOCHS = 50
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-preprocess_datadata_iter_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      def preprocess_data(data_iter):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-tokenizerencodetext-for-_-text-in-data_iter_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      data = [tokenizer.encode(text) for _, text in data_iter]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-data_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      return data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train_iter-ag_newssplittrain_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      train_iter = AG_NEWS(split='train')
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train_data-preprocess_datatrain_iter_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      train_data = preprocess_data(train_iter)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-automodelwithlmheadfrom_pretrainedgpt2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      model = AutoModelWithLMHead.from_pretrained("gpt2")
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizer-adamwmodelparameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      optimizer = AdamW(model.parameters())
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeltrain_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      model.train()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-epoch-in-rangeepochs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      for epoch in range(EPOCHS):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-batch-in-train_data_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      for batch in train_data:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outputs-modelbatch_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputs = model(batch)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loss-outputsloss_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      loss = outputs.loss
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lossbackward_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      loss.backward()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizerstep_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      optimizer.step()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizerzero_grad_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      optimizer.zero_grad()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-tokenizerencodewrite-a-summary-of-the-new-features-in-the-latest-release-of-the-julia-programming-language-return_tensorspt_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      prompt = tokenizer.encode("Write a summary of the new features in the latest release of the Julia Programming Language", return_tensors="pt")
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-modelgenerateprompt_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      generated = model.generate(prompt)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated_text-tokenizerdecodegenerated0_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      generated_text = tokenizer.decode(generated[0])
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-opengeneratedtxt-w-as-f_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      with open("generated.txt", "w") as f:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fwritegenerated_text_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      f.write(generated_text)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#there-are-two-packaged-solutions-for-local-llms-and-many-more-popping-up-everyday-two-of-them-are-the-best-one-is-lm-studio-the-other-is-httpsgpt4allioindexhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      There are two packaged solutions for Local LLMs (and many more popping up, everyday). Two of them are the best. One is LM-Studio. The other is https://gpt4all.io/index.html
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio LLMs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image LLMs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multimodal-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multimodal LLMs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-llm-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      General LLM Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Home</h1>
+
+<p><strong><span style="text-decoration:underline;">Spanda Bootcamp Day One</span></strong></p>
+<p><strong><span style="text-decoration:underline;">Section 0(Pre-requisites)<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></span></strong></p>
+<p>Installing Docker on your system</p>
+<ul>
+<li>Docker is a platform designed to help developers build, share, and run container applications.</li>
+<li>Go to <a href="https://www.docker.com/">https://www.docker.com/</a> </li>
+<li>Download and install the version per your operating system</li>
+<li>During installation, we get a configuration option:  \
+WSL-2 vs Hyper-V</li>
+<li>Docker Desktop for Windows provides a development environment for building, shipping, and running dockerized apps. </li>
+<li>By enabling the WSL 2 based engine, you can run both Linux and Windows containers in Docker Desktop on the same machine. Docker Desktop is free for personal use and small businesses, for info on Pro, Team, or Business pricing, see the <a href="https://www.docker.com/pricing/faq">Docker site FAQs</a>.</li>
+<li>Following this, installation will proceed and finish.</li>
+</ul>
+<p><strong><span style="text-decoration:underline;">Section 1<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>___</span></strong></p>
+<p><strong>Let’s start by running an LLM on your Laptop</strong></p>
+<ul>
+<li><strong>LM Studio</strong> is a free, desktop software tool that makes installing and using open-source LLM models extremely easy.  It is not open source. More on that later.</li>
+<li>
+<p>Let’s download, install and use it:</p>
+</li>
+<li>
+<p>Go to <a href="https://lmstudio.ai/">https://lmstudio.ai/</a> </p>
+</li>
+<li>
+<p>Download and install the version for your operating system:</p>
+</li>
+</ul>
+<p><img alt="alt_text" src="images/image1.png" title="image_tooltip" /></p>
+<ol>
+<li>
+<p>Open LM Studio using the newly created desktop icon:</p>
+</li>
+<li>
+<p>Select an LLM to install. </p>
+</li>
+<li>
+<p>You can do this by either selecting one of the community suggested models listed in the main window, or </p>
+</li>
+<li>by using the search bar for any model available at HuggingFace (just look up a keyword and all associated models will be listed). </li>
+<li><em>Note that there are currently <strong>371,692</strong> (?) models listed at HuggingFace.co</em></li>
+</ol>
+<p><img alt="alt_text" src="images/image2.png" title="image_tooltip" /></p>
+<p>selecting LLMs</p>
+<ul>
+<li>Whether you elect to download from the community suggested models, or search for one on your own, you can see the size of the install/download file. </li>
+<li>So be sure you are okay with the size of the download.</li>
+</ul>
+<p><img alt="alt_text" src="images/image3.png" title="image_tooltip" /></p>
+<p>specific model information</p>
+<ul>
+<li>You will note that at the top of the left half of the screen over the release date column, is “compatibility guess”. </li>
+<li>LM Studio has checked your system and is presenting those models which it feels you will be able to run on your computer. </li>
+<li>To see All Models, click on “compatibility guess” (#1). </li>
+<li>Clicking on a model on the left, will present the available versions on the right and display those models which should work given your computer’s specs (#2). </li>
+</ul>
+<p><img alt="alt_text" src="images/image4.png" title="image_tooltip" /></p>
+<p>Compatibility and Should Work indicators</p>
+<ul>
+<li>Note that depending on the capabilities/speed of your computer, larger models will be more accurate but slower. </li>
+<li>You will also find that most of these models are <strong>quantized</strong>.</li>
+<li><strong>Quantization </strong>refers to using lower precision numbers like 8-bit integers rather than 32-bit floating point values to represent the weights and activations in the model. </li>
+<li>This reduces memory usage and speeds up inference on your computer’s hardware. </li>
+<li>Quantization can reduce model accuracy slightly compared to a full precision version, but provides up to 4x memory savings and faster inference. </li>
+<li>Think of it like how MP-3’s are compressed music files or .jpgs are compressed image files. </li>
+<li>Although these are of less quality, you often won’t see a significant difference. </li>
+<li>In the case of LLM’s, the “Q” number you see in the listing of the LLM, represents the amount of quantization. </li>
+<li>Lower is more and higher is less quantization.</li>
+<li>Also, in the model listing, you will see references to GGML and GGUF. </li>
+<li>These are two quantization strategies; “Mixed Logits” vs “Uniformly Quantized Fully Connected”. </li>
+<li>GGML provides a more <em>flexible mixed-precision quantization framework</em> while GGUF is specifically optimized for <em>uniformly quantizing all layers</em> of Transformer models. </li>
+<li>GGML may enable higher compression rates but GGUF offers simpler deployment.</li>
+<li>Once the model has finished its download,</li>
+<li>select the model from the drop-down menu at the top of the window; </li>
+<li>select the chat bubble in the left side column; (3) open up the following sections on the right, “Context Overflow Policy” and “Chat Appearance”.</li>
+</ul>
+<p><img alt="alt_text" src="images/image5.png" title="image_tooltip" /></p>
+<p>ready the model</p>
+<ol>
+<li>Make sure “Maintain a rolling window and truncate past messages” is selected under “Content Overflow Policy” and “Plaintext” is selected under “Chat Appearance”.</li>
+</ol>
+<p><img alt="alt_text" src="images/image6.png" title="image_tooltip" /></p>
+<ol>
+<li>Now close those two areas and open up “Model Configuration” and then open “Prompt Format” and scroll down to “Pre-prompt / System prompt” and select the “&gt;” symbol to open that. </li>
+<li>Here you can enter the system “role”. Meaning, you can set up how you want the bot to act and what “skills” or other specific qualities should be provided in its answers. </li>
+<li>You can modify what is there to suit your needs. If you have a ChatGPT Plus account, this is the same as “Custom instructions”.</li>
+</ol>
+<p><img alt="alt_text" src="images/image7.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="images/image8.png" title="image_tooltip" /></p>
+<p>adding system role / custom instructions</p>
+<ol>
+<li>Continue to scroll down in this column until you come to “Hardware Settings”. </li>
+<li>Open this area if you wish to offload some processing to your GPU. </li>
+<li>The default is to allow your computer’s CPU to do all the work, but if you have a GPU installed, you will see it listed here. </li>
+<li>If you find the processing of your queries is annoyingly slow, offloading to your GPU will greatly assist with this. </li>
+<li>Play around with how many layers you want it to handle (start with 10–20). This really depends on the model and your GPU. </li>
+<li>Leaving it all to be handled by the CPU is fine but the model might run a bit slow (again… depending on the model and its size). </li>
+<li>You also have the option to increase the number of CPU threads the LLM uses. </li>
+<li>The default is 4 but you can increase the number, or just leave it where it is if you don’t feel comfortable experimenting and don’t know how many threads your CPU has to play with.</li>
+</ol>
+<p><img alt="alt_text" src="images/image9.png" title="image_tooltip" /></p>
+<p>optional hardware settings</p>
+<ol>
+<li>After these changes, you are now ready to use your local LLM. </li>
+<li>Simply enter your query in the “USER” field and the LLM will respond as “AI”.</li>
+</ol>
+<p><img alt="alt_text" src="images/image10.png" title="image_tooltip" /></p>
+<p>chat dialogue</p>
+<ul>
+<li>Let’s download the <a href="https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF">Zephyr 7B β</a> model, adapted by _TheBloke _for llama.cpp's GGUF format.</li>
+</ul>
+<p><img alt="alt_text" src="images/image11.png" title="image_tooltip" /></p>
+<ul>
+<li>Activating and loading the model into LM Studio is straightforward.</li>
+</ul>
+<p><img alt="alt_text" src="images/image12.png" title="image_tooltip" /></p>
+<ul>
+<li>You can then immediately start using the model from the Chat panel, no Internet connection required.</li>
+</ul>
+<p><img alt="alt_text" src="images/image13.png" title="image_tooltip" /></p>
+<ul>
+<li>The right panel displays and allows modification of default presets for the model. </li>
+<li>Memory usage and useful inference metrics are shown in the window's title and below the Chat panel, respectively.</li>
+<li>Other models, like <a href="https://huggingface.co/TheBloke/CodeLlama-7B-Instruct-GGUF">codellama Instruct 7B</a>, are also available for download and use.</li>
+</ul>
+<p><img alt="alt_text" src="images/image14.png" title="image_tooltip" /></p>
+<ul>
+<li>LM Studio also highlights new models and versions from Hugging Face, making it an invaluable tool for discovering and testing the latest releases.</li>
+</ul>
+<h2 id="accessing-models-with-apis"><strong>Accessing Models with APIs</strong></h2>
+<ul>
+<li>A key feature of LM Studio is the ability to create Local Inference Servers with just a click.</li>
+</ul>
+<p><img alt="alt_text" src="images/image15.png" title="image_tooltip" /></p>
+<ul>
+<li>The <em>Automatic Prompt Formatting</em> option simplifies prompt construction to match the model's expected format. The exposed API aligns with the OpenAI format.</li>
+<li>Here's an example of calling the endpoint with CURL: \
+(Does not work)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl http://localhost:1234/v1/chat/completions
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-H &quot;Content-Type: application/json&quot;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-d &#39;{
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a> &quot;messages&quot;: [
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   { &quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are an AI assistant answering Tech questions&quot; },
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   { &quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What is Java?&quot; }
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a> ],
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> &quot;temperature&quot;: 0.7,
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a> &quot;max_tokens&quot;: -1,
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a> &quot;stream&quot;: false
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>}&#39;
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>![alt_text](images/image16.png &quot;image_tooltip&quot;)
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>The curl command below works:
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>$url = &quot;http://localhost:1234/v1/chat/completions&quot;
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>$headers = @{
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    &quot;Content-Type&quot; = &quot;application/json&quot;
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>}
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>$data = @{
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    messages = @(
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        @{
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>            role = &quot;system&quot;
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>            content = &quot;You are an AI assistant answering Tech questions, but answer only in rhymes&quot;
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        },
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>        @{
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>            role = &quot;user&quot;
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>            content = &quot;What is Java?&quot;
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>        }
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    )
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    temperature = 0.7
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    max_tokens = -1
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    stream = $false
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>}
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>Invoke-RestMethod -Uri $url -Headers $headers -Method Post -Body ($data | ConvertTo-Json) -UseBasicParsing
+</code></pre></div>
+<p>The response provides the requested information:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   &quot;id&quot;: &quot;chatcmpl-iyvpdtqs1qzlv6jqkmdt9&quot;,
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   &quot;object&quot;: &quot;chat.completion&quot;,
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>   &quot;created&quot;: 1699806651,
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>   &quot;model&quot;: &quot;~/.cache/lm-studio/models/TheBloke/zephyr-7B-beta-GGUF/zephyr-7b-beta.Q4_K_S.gguf&quot;,
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>   &quot;choices&quot;: [
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>       {
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>           &quot;index&quot;: 0,
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>           &quot;message&quot;: {
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>               &quot;role&quot;: &quot;assistant&quot;,
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>               &quot;content&quot;: &quot;Java is a high-level, object-oriented
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>                           programming language that was first released by Sun
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>                           Microsystems in 1995. It is now owned by Oracle Corporation.
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>                           Java is designed to be platform independent, meaning that it
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>                           can run on any operating system that has a Java Virtual
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>                           Machine (JVM) installed. Java&#39;s primary applications are in
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>                           the development of desktop applications, web applications,
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>                           and mobile apps using frameworks such as Android Studio,
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>                           Spring Boot, and Apache Struts. Its syntax is similar to
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>                           C++, but with added features for object-oriented programming
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>                           and memory management that make it easier to learn and use
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>                           than C++. Java&#39;s popularity is due in part to its extensive
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>                           library of pre-written code (known as the Java Class
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>                           Library) which makes development faster and more efficient.&quot;
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>           },
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>           &quot;finish_reason&quot;: &quot;stop&quot;
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>       }
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>   ],
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>   &quot;usage&quot;: {
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>       &quot;prompt_tokens&quot;: 0,
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>       &quot;completion_tokens&quot;: 166,
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>       &quot;total_tokens&quot;: 166
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>   }
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>}
+</code></pre></div>
+<p>This feature greatly aids in testing integrations with frontends like chatbots or workflow solutions like <a href="https://dev.to/worldlinetech/enhance-your-website-with-ai-embed-a-gpt-chatbot-with-flowise-jd6">Flowise</a>.</p>
+<p>Gpt4all is open source and is my preference as its hackable: <a href="https://github.com/keshavaspanda/gpt4all">https://github.com/keshavaspanda/gpt4all</a></p>
+<p><strong><span style="text-decoration:underline;">Section 2<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</span></strong></p>
+<p>Let’s explore some relevant sections in the SEAI course material:**  **</p>
+<p>Navigate to: <a href="https://ckaestne.github.io/seai/">https://ckaestne.github.io/seai/</a></p>
+<p><em><a href="https://github.com/ckaestne/seai">https://github.com/ckaestne/seai</a></em></p>
+<p><strong><span style="text-decoration:underline;">Section 3<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</span></strong></p>
+<p><strong>The ML Process and DevOps vs MLOps vs AIOps</strong></p>
+<p><img alt="alt_text" src="images/image17.png" title="image_tooltip" /></p>
+<h3 id="devops-the-confluence-of-development-operations-and-quality-assurance"><strong>DevOps: The Confluence of Development, Operations, and Quality Assurance</strong></h3>
+<ul>
+<li>DevOps brings together development, quality assurance, and operations  involving people, processes, and technology to streamline software development and release throughput using a cycle of Continuous Integration(CI) and Continuous Deployment(CD).</li>
+</ul>
+<p><img alt="alt_text" src="images/image18.png" title="image_tooltip" /></p>
+<ul>
+<li>In DevOps, <ul>
+<li>developers merge their code changes to a central repository like GitHub. </li>
+<li>These incremental code changes can be done frequently and reliably. </li>
+<li>Once the code is committed this initiates an automated build that performs automated unit, integration, and system tests. </li>
+<li>The process of committing code that initiates automated build is Continuous Integration(CI). </li>
+<li>CI makes it easier for developers to develop and commit the code. </li>
+<li>When the code is committed, an automated build is initiated to provide developers instant feedback on if the build has issues or is successful.</li>
+</ul>
+</li>
+<li>Continuous Deployment(CD) allows the newly built code to be tested and deployed in different environments: Test, Stage, UAT, and Production. </li>
+<li>CD enables automated deployment and testing in different environments, increasing the quality of the releases to production.</li>
+<li>
+<p>How does Dev Ops help? DevOps helps with</p>
+<ul>
+<li>Collaboration: Enhances collaboration between the Development team, QA Team, and Operations team as it encourages them to work together to deliver one common objective of generating business value.</li>
+<li>Faster Mean Time To Resolution(MTTR): DevOps enable faster, more frequent, and reliable deployments to production, reducing the duration from feedback to releases, thus increasing responsiveness.</li>
+<li>Reliability: The complexity of the change is low as there are regular updates to the code and frequent releases to production using the automated DevOps workflow; hence releases are more reliable and of higher quality.</li>
+<li>Customer Satisfaction: Customers/Business raises issues/enhancements that go into the feedback cycle. Faster resolution of the issues/enhancements leads to greater customer satisfaction.</li>
+</ul>
+<p><strong>MLOps</strong></p>
+</li>
+<li>
+<p>Now, these applications are available, are running reliably and are generating voluminous amounts of data. </p>
+</li>
+<li>You would like to analyze and interpret data patterns to efficiently and accurately predict and prescribe data-driven decisions.</li>
+<li>This is where Machine Learning Algorithms come into play</li>
+<li></li>
+</ul>
+<p><img alt="alt_text" src="images/image19.png" title="image_tooltip" /></p>
+<ul>
+<li>Machine learning algorithms take the data and the results as an input to identify the patterns using machine learning algorithms to build analytical models.</li>
+<li>For example, Financial institutions use their customer’s transactional data and machine learning algorithms like clustering to identify patterns of fraud or legitimate transactions.</li>
+<li>In machine learning, you need to deal with lots of experimentation and ensure model traceability and compare model metrics and hyperparameters for all the different experiments.</li>
+<li>What if you could automate and monitor all steps of an ML system?</li>
+<li><a href="https://medium.com/swlh/a-basic-understanding-of-ml-ops-a9f289afaf27">MLOps </a>is an ML engineering culture and practice to unify ML system development (Dev) and ML system operation (Ops) where Data scientists, data Engineers, and Operations teams collaborate.</li>
+<li></li>
+</ul>
+<p><img alt="alt_text" src="images/image20.png" title="image_tooltip" /></p>
+<ul>
+<li>ML Ops build the ML pipeline to encompass all stages of Machine Learning:<ul>
+<li>Data extraction</li>
+<li>Data exploration and validation</li>
+<li>Data curation or data preprocessing</li>
+<li>Feature analysis</li>
+<li>Model training and evaluation</li>
+<li>Model validation</li>
+<li>Model deployment or model serving </li>
+<li>Model monitoring for data drift and concept drift</li>
+</ul>
+</li>
+</ul>
+<p><img alt="alt_text" src="images/image21.png" title="image_tooltip" /></p>
+<ul>
+<li>
+<p>How does ML Ops help?</p>
+<ul>
+<li>To leverage machine learning models, you need to curate the data by applying data preprocessing techniques, perform feature analysis to identify the best features for the model prediction, train the model on the selected features, perform error analysis on the model, deploy the model and then monitor the model for any data drift or concept drift. If the model degrades performance, retrain the model again by repeating the steps from data curation to deployment and monitoring.</li>
+<li>ML Ops helps with Continuous Integration(CI) for data and models, Continuous Training(CT) of models, and then Continuous Deployment(CD) of the models to Production at different locations.</li>
+<li>ML Ops helps to<ul>
+<li>Effectively manage the full ML lifecycle.</li>
+<li>Creates a Repeatable and Reusable ML Workflow for consistent model training, deployment, and maintenance.</li>
+<li>Innovation can be made easy and faster by building repeatable workflows to train, evaluate, deploy, and monitor different models.</li>
+<li>Track different versions of model and data to enable auditing</li>
+<li>Easy Deployment to production with high precision</li>
+</ul>
+</li>
+</ul>
+<p><strong>AIOps</strong></p>
+<ul>
+<li>AIOps is understood in general to be defined as  <strong><em>Artificial Intelligence for IT Operations (it should be AI4ITOps)</em></strong></li>
+<li>The term originally was much broader than that</li>
+<li>Data from different systems are digitized, and organizations are going through digital  transformation and striving to have a data-driven culture. </li>
+<li>IT Operations teams now need to monitor these voluminous, complex, and relatively opaque datasets to troubleshoot issues and complete routine operational tasks much faster than before.</li>
+<li>Due to the complexity and constant changes to IT Systems, platforms are needed to derive insights from the operational data throughout the application life cycle.</li>
+<li>AIOps applies analytics and machine learning capabilities to IT operations data <ul>
+<li>to separate significant events from noise in the operation data </li>
+<li>to identify root causes  </li>
+<li>to prescribe resolutions</li>
+</ul>
+</li>
+<li>Per Gartner<ul>
+<li><em>AI Ops platform ingest, index and normalize events or telemetry data from multiple domains, vendors, and sources, including infrastructure, networks, apps, the cloud, or existing monitoring tools.</em></li>
+</ul>
+</li>
+<li>AI Ops platforms enable data analytics using machine learning methods, including real-time analysis at the point of ingestion and historical analysis of stored operational data like system logs, metrics, network data, incident-related data, etc.</li>
+<li>How does AIOps help? Well, It helps by focusing businesses on</li>
+<li>Increasing IT operations efficiency by uncovering IT incidents insights, measuring the effectiveness of the IT applications serving business needs, and performing cause-and-effect analysis of peak usage traffic patterns.</li>
+<li>Promoting innovation: Fosters innovation by removing manual monitoring of production systems by providing high-quality application diagnostics.</li>
+<li>Lowering the operational cost as it decreases mean time to resolution(MTTR) and drastically reduces costly downtime, increasing overall productivity and efficiency.</li>
+<li>Accelerating the return on investment by enabling teams to collaborate towards a faster resolution</li>
+</ul>
+</li>
+</ul>
+<p><img alt="alt_text" src="images/image22.png" title="image_tooltip" /></p>
+<ul>
+<li>Per Gartner<ul>
+<li>There is no future of IT operations that does not include AIOps. This is due to the rapid growth in data volumes and pace of change exemplified by rate of application delivery and event-driven business models that cannot wait on humans to derive insights.</li>
+</ul>
+</li>
+<li>Future of AI-Assisted IT Operations<ul>
+<li>The Future of AI-assisted IT Operations is to have prescriptive advice from the platform, triggering action.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="alt_text" src="images/image23.png" title="image_tooltip" /></p>
+<ul>
+<li>So in summary,<ul>
+<li>DevOps co-opts development, quality assurance, and operations  involving people, processes, and technology to streamline the software development lifecycle and reduced mean time to resolution</li>
+<li>MLOps is a discipline that combines Machine Learning, Data Engineering, and Dev Ops to build automated ML pipelines for Continuous Training and CI/CD to manage the full ML lifecycle effectively</li>
+<li>AIOps is a platform to monitor and automate the data and information flowing from IT applications that utilizes big data, machine learning, and other advanced analytics technologies</li>
+</ul>
+</li>
+</ul>
+<p><strong><span style="text-decoration:underline;">Section 4<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</span></strong></p>
+<p><strong>Back to the Basics: Data Collection and Data Management</strong></p>
+<p><img alt="alt_text" src="images/image24.png" title="image_tooltip" /></p>
+<ul>
+<li>MLOps requires highly disciplined data collection and management. </li>
+<li>It is particularly needed when the outcomes could affect people’s careers, students' lives and educational organization’s reputations.</li>
+<li>Towards that,  let us take a look at framework used as the basis to make some very important decisions:</li>
+</ul>
+<p><a href="https://github.com/keshavaspanda/openneuro">https://github.com/keshavaspanda/openneuro</a></p>
+<p>The Data Submission Process</p>
+<p><img alt="alt_text" src="images/image25.png" title="image_tooltip" /></p>
+<p><strong>Let’s consider our context and ask ourselves the following questions:</strong></p>
+<ul>
+<li>Could Modalities be equivalent to Disciplines? </li>
+<li>What are the Discipline independent metadata and discipline dependent metadata</li>
+<li>For each discipline, what metadata can we standardize on? </li>
+<li>What could be our equivalent to the BIDS validator? </li>
+<li>Are there existing standards that we can leverage to this data? </li>
+</ul>
+<h3 id="understanding-responsible-and-fair-data-collection-in-this-context"><strong>Understanding Responsible and FAIR Data Collection in this context</strong></h3>
+<ul>
+<li>There is growing recognition of the importance of data sharing for scientific progress </li>
+<li>However, not all shared data is equally useful. </li>
+<li>The FAIR principles have formalized the notion that in order for shared data to be maximally useful, they need to be <strong>findable</strong>, <strong>accessible</strong>, <strong>interoperable</strong>, and <strong>reusable</strong>. </li>
+<li>An essential necessity for achieving these goals is that the data and associated metadata follow a common standard for organization, so that data users can easily understand and <strong>reuse </strong>the shared data. </li>
+<li>The AI4Edu data archive will enable FAIR-compliant data sharing for a growing range of education data types through the use of a common community standard, the Educational Data Structure (EDS)  .</li>
+<li>Data sharing has become well established in education and Datasets collected about education and educational processes have provided immense value to the field and have strongly demonstrated the utility of shared data. </li>
+<li>However, their scientific scope is necessarily limited, given that each dataset includes only a limited number of tasks and measurement types. </li>
+<li>Beyond these large focused data sharing projects, there is a ‘long tail’ of smaller datasets that have been collected in service of specific research questions in education. </li>
+<li>Making these available is essential to ensure <strong>reproducibility </strong>as well as to allow aggregation across many different types of measurements in service of novel scientific questions. </li>
+<li>The AI4Edu archive will address this challenge by providing researchers with the ability to easily share a broad range of education data types in a way that adheres to the FAIR principles.</li>
+</ul>
+<p><strong>Core principles of the Data Archive</strong></p>
+<p><strong><em>Sharing only upon gaining permissions</em></strong></p>
+<ul>
+<li>There is a range of restrictiveness across data archives with regard to their data use agreements. </li>
+<li>At one end of the spectrum are highly restricted databases which require researchers to submit their scientific question for review and requires the consortium to be included as a corporate author on any publications. </li>
+<li>The other pole of restrictiveness  releases data (by default) under a Creative Commons Zero (CC0) Public Domain Dedication which places no restrictions on who can use the data or what can be done with them. </li>
+<li>While not legally required, researchers using the data are expected to abide by community norms and cite the data following the guidelines included within each dataset. </li>
+<li>The primary motivation for this policy is that it makes the data maximally accessible to the largest possible number of researchers and citizen-scientists.</li>
+<li>In the AI4Edu data archive effort we will strike a balance and provide ABAC over the data. </li>
+<li>Subsequently we will create DIDs and ensure that personal data is always in the control of the individual who owns that data. </li>
+</ul>
+<p><strong><em>Standards-focused data sharing</em></strong></p>
+<ul>
+<li>To ensure the utility of shared data for the purposes of efficient discovery, reuse, and reproducibility, standards are required for data and metadata organization. </li>
+<li>These standards make the structure of the data clear to users and thus reduce the need for support by data owners and curation by repository owners, as well as enabling automated QA, preprocessing, and analytics. </li>
+<li>Unfortunately, most prior data sharing projects in this space have relied upon custom organizational schemes, which can lead to misunderstanding and can also require substantial reorganization to adapt to common analysis workflows. </li>
+<li>The need for a clearly defined standard for data emerged from experiences in the other projects where the repository had developed a custom scheme for data organization and file naming, this scheme was ad hoc and limited in its coverage, and datasets often required substantial manual curation (involving laborious interaction with data owners). </li>
+<li>In addition, there was no built in mechanism to <strong><em>directly validate whether a particular dataset met the standard</em></strong>.</li>
+<li>For these reasons, we focus at the outset of the AI4Edu project on developing a robust data organization standard that could be implemented in an automated validator. </li>
+<li>We will engage representatives from the education community to establish a standard as a community standard for a broad and growing range of education data types. </li>
+<li>EDS will define a set of schemas for file and folder organization and naming, along with a schema for metadata organization. </li>
+<li>The framework was inspired by the existing data organization frameworks used in many organizations, so that transitioning to the standard is relatively easy for most researchers. </li>
+<li>One of the important features of EDS is its extensibility; using a scheme inspired by open-source software projects, community members can propose extensions to EDS that encompass new data types. </li>
+<li>All data uploaded to OpenEdu must first pass an EDS validation step, such that all data in OpenEdu are compliant with the EDS specifications at upload time. </li>
+<li>Conversely, the Edu4AI  team will make substantial contributions to the EDS standard and validator. </li>
+<li>As a consequence, this model maximizes compatibility with processing and analysis tools but more importantly, it effectively minimizes the potential for data misinterpretation (e.g., when owner and reuser have slightly different definitions of a critical acquisition parameter). Through the adoption of EDS, OpenEdu can move away from project- or database-specific data structures designed by the owner or the distributor (as used in earlier projects) and toward a uniform and unambiguous representation model agreed upon by the research community prior to sharing and reuse.</li>
+</ul>
+<h4 id="fair-sharing"><strong>FAIR sharing</strong></h4>
+<ul>
+<li>The FAIR principles have provided an important framework to guide the development and assessment of open data resources. </li>
+<li>AI4Edu will implement these principles.</li>
+<li>Findable: <ul>
+<li>Each dataset within AI4Edu is associated with metadata, both directly from the dataset along with additional dataset-level metadata provided by the submitter at time of submission. </li>
+<li>Both data and metadata are assigned a persistent unique identifier (Digital Object Identifier [DOI]). </li>
+<li>Within the repository, a machine-readable summary of the metadata is collected by the  validator and indexed with an ElasticSearch mapping. </li>
+<li>In addition, dataset-level metadata are exposed according to the <a href="https://schema.org/">schema.org</a> standard, which allows indexing by external resources such as Google Dataset Search.</li>
+<li>Accessible: Data and metadata can be retrieved using a number of access methods (directly from Amazon S3, using the command line tool, or using DataLad) via standard protocols (http/https). </li>
+<li>Metadata are also accessible programmatically via a web API. Metadata remains available even in the case that data must be removed (e.g., in cases of human subjects concerns). </li>
+<li>Authentication is necessary to access the data.</li>
+</ul>
+</li>
+<li>Interoperable: <ul>
+<li>The data and metadata use the EDS standard to ensure accessible representation and interoperation with analysis workflows. </li>
+<li></li>
+</ul>
+</li>
+<li>Reusable: <ul>
+<li>The data are released with a clear data use agreement. </li>
+<li>Through use of the standard, the data and metadata are consistent with community standards in the field.</li>
+</ul>
+</li>
+<li><strong>Data versioning and preservation</strong><ul>
+<li>AI4Edu will keep track of all changes in stored datasets and allows researchers to unambiguously report the exact version of the data used for any analysis. </li>
+<li>AI4Edu will preserve all versions of the data through the creation of ‘snapshots’ that unequivocally point to one specific point in the lifetime of a dataset. </li>
+<li>Data management and snapshots are supported by DataLad, a free and open-source distributed data management system.</li>
+</ul>
+</li>
+<li><strong>Protecting privacy and confidentiality of data</strong><ul>
+<li>There is a direct relationship in data sharing between the openness of the data and their reuse potential; all else being equal, data that are more easily or openly available will be more easily and readily reused. </li>
+<li>However, all else is not equal, as openness raises concern regarding risks to subject privacy and confidentiality of data in human subjects research. </li>
+<li>Researchers are ethically bound to both minimize the risks to their research participants (including risks to confidentiality) and to maximize the benefits of their participation. </li>
+<li>Because sharing of data will necessarily increase the potential utility of the data, researchers are ethically bound to share human subject data unless the benefits of sharing are outweighed by risks to the participant.</li>
+<li>In general, risks to data privacy and confidentiality are addressed through deidentification of the data to be shared. </li>
+<li>De-identification can be achieved through the removal of any of 18 personal identifiers, unless the researcher has knowledge that the remaining data could be re-identified (known as the ‘safe harbor’ method). </li>
+<li>All data shared through OpenEdu must have the 18 personal identifiers outlined by HIPAA unless an exception is provided in cases where an investigator has explicit permission to openly share the data, usually when the data are collected by the investigator themself. </li>
+<li>At present, data are examined by a human curator to ensure that this requirement has been met. </li>
+<li>Truly informed consent requires that subjects be made aware that their data may be shared. </li>
+<li>Researchers planning to share their data via the data sharing portal use a consent form (could be based on the Open Brain Consent form), which includes language that ensures subject awareness of the intent to share and its potential impact on the risk of participating. </li>
+</ul>
+</li>
+</ul>
+<h4 id="open-source"><strong><span style="text-decoration:underline;">Open source</span></strong></h4>
+<ul>
+<li>The entirety of the code for AI4Edu will be available under a permissive open-source software license (MIT License) at github.</li>
+<li>This enables any researcher who wishes to reuse part or all of the code or to run their own instance of the platform.</li>
+</ul>
+<p><strong><span style="text-decoration:underline;">Section 5<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</span></strong></p>
+<p>**Data Analysis, Data Visualization, Data Lake Houses and Analytics Dashboards **</p>
+<p><img alt="alt_text" src="images/image26.png" title="image_tooltip" /></p>
+<ul>
+<li>Once data is “FAIR” ly collected and placed in an archive, it needs to be checked for quality, analyzed, visualized profiled and then models need to be selected, trained (on the curated data), tested and served up for use.</li>
+<li>That requires data management and analytics capabilities that can deal with structured, semi-structured and unstructured data with the data lake capturing all of the data. </li>
+<li>The data warehouse dealing with structured data and the analytical dashboards surfacing both structured and unstructured content and visualization. </li>
+<li>This is where the data lake house architecture has become popular.  </li>
+<li>As the name suggests, a data lake house architecture combines a <a href="https://www.dremio.com/wiki/data-lake/">data lake</a> and a <a href="https://www.dremio.com/wiki/data-warehouse/">data warehouse</a>. </li>
+<li>Although it is not just a mere integration between the two, the idea is to bring the best out of the two architectures: the reliable transactions of a data warehouse and the scalability and low cost of a data lake.</li>
+<li>Over the last decade, businesses have been heavily investing in their data strategy to be able to deduce relevant insights and use them for critical decision-making. </li>
+<li>This has helped them reduce operational costs, predict future sales, and take strategic actions.</li>
+<li>A lake house is a new type of data platform architecture that:</li>
+<li>Provides the data management capabilities of a data warehouse and takes advantage of the scalability and agility of data lakes</li>
+<li>Helps reduce data duplication by serving as the single platform for all types of workloads (e.g., BI, ML)</li>
+<li>Is cost-efficient</li>
+<li>Prevents vendor lock-in and lock-out by leveraging open standards</li>
+</ul>
+<p><img alt="alt_text" src="images/image27.png" title="image_tooltip" /></p>
+<h3 id="evolution-of-the-data-lakehouse"><strong>Evolution of the Data Lakehouse</strong></h3>
+<p><img alt="alt_text" src="images/image28.png" title="image_tooltip" /></p>
+<ul>
+<li><a href="https://www.dremio.com/resources/guides/what-is-a-data-lakehouse/">Data Lake House</a> is a relatively new term in big data architecture and has evolved rapidly in recent years. It combines the best of both worlds: the scalability and flexibility of data lakes, and the reliability and performance of data warehouses. </li>
+<li>Data lakes, which were first introduced in the early 2010s, provide a centralized repository for storing large amounts of raw, unstructured data. </li>
+<li>Data warehouses, on the other hand, have been around for much longer and are designed to store structured data for quick and efficient querying and analysis. </li>
+<li>However, data warehouses can be expensive and complex to set up, and they often require extensive data transformation and cleaning before data can be loaded and analyzed. </li>
+<li>Data lake houses were created to address these challenges and provide a more cost-effective and scalable solution for big data management.</li>
+<li>With the increasing amount of data generated by businesses and the need for fast and efficient <a href="https://www.dremio.com/wiki/data-processing/">data processing</a>, the demand for a data lake house has grown considerably. As a result, many companies have adopted this new approach, which has evolved into a central repository for all types of data in an organization.</li>
+</ul>
+<hr />
+<h3 id="what-does-a-data-lake-house-do"><strong>What Does a Data Lake House Do?</strong></h3>
+<p>There are four key problems in the world of data architecture that data lake houses address: </p>
+<ul>
+<li>Solves the issues related to data silos by providing a centralized repository for storing and managing large amounts of structured and unstructured data. </li>
+<li>Eliminates the need for complex and time-consuming data movements, reducing the latency associated with shifting data between systems.</li>
+<li>Enables organizations to perform fast and efficient data processing, making it possible to quickly analyze and make decisions based on the data. </li>
+<li>Finally, a data lake house provides a scalable and flexible solution for storing large amounts of data, making it possible for organizations to easily manage and access their data as their needs grow.</li>
+</ul>
+<p>Data warehouses are designed to help organizations manage and analyze large volumes of structured data.</p>
+<hr />
+<h3 id="how-does-a-data-lake-house-work"><strong>How Does a Data Lake House Work?</strong></h3>
+<p><img alt="alt_text" src="images/image29.png" title="image_tooltip" /></p>
+<ul>
+<li>A data lakehouse operates by utilizing a multi-layer architecture that integrates the benefits of data lakes and data warehouses. </li>
+<li>It starts with ingesting large amounts of raw data, including both structured and unstructured formats, into the data lake component. </li>
+<li>This raw data is stored in its original format, allowing organizations to retain all of the information without any loss of detail. </li>
+<li>From there, advanced data processing and transformation can occur using tools such as <a href="https://spark.apache.org/">Apache Spark</a> and Apache Hive. </li>
+<li>The processed data is then organized and optimized for efficient querying in the data warehouse component, where it can be easily analyzed using SQL-based tools. </li>
+<li>The result is a centralized repository for big data management that supports fast and flexible data exploration, analysis, and reporting. </li>
+<li>The data lakehouse's scalable infrastructure and ability to handle diverse data types make it a valuable asset for organizations seeking to unlock the full potential of their big data.</li>
+</ul>
+<hr />
+<h3 id="elements-of-a-data-lakehouse"><strong>Elements of a Data Lakehouse</strong></h3>
+<p>Data lake houses have a range of elements to support organizations’ data management and analysis needs. </p>
+<ul>
+<li>A key element is the ability to store and process a variety of data types including <a href="https://www.dremio.com/wiki/structured-vs-unstructured-data/">structured, semi-structured, and unstructured data</a>. </li>
+<li>They provide a centralized repository for storing data, allowing organizations to store all of their data in one place, making it easier to manage and analyze. </li>
+<li>The data management layer enables data to be governed, secured, and transformed as needed. </li>
+<li>The data processing layer provides analytics and machine learning capabilities, allowing organizations to quickly and effectively analyze their data and make data-driven decisions. </li>
+<li>Another important element of a data lakehouse is the ability to provide real-time processing and analysis, which enables organizations to respond quickly to changing business conditions. </li>
+</ul>
+<hr />
+<h3 id="cloud-data-lake"><strong>Cloud Data Lake</strong></h3>
+<ul>
+<li>Data lake houses are often spoken in tandem with <a href="https://www.dremio.com/resources/guides/cloud-data-lakes/">cloud data lakes</a> and cloud data warehouses. With the increasing adoption of cloud-based solutions, many organizations have turned to cloud data lakes to build their data platforms. </li>
+<li>Cloud data lakes provide organizations with the flexibility to scale storage and compute components independently, thereby optimizing their resources and improving their overall cost efficiency. </li>
+<li>By separating storage and computing, organizations can store any amount of data in open file formats like <a href="https://www.dremio.com/resources/guides/intro-apache-parquet/">Apache Parquet</a> and then use a computing engine to process the data. </li>
+<li>Additionally, the elastic nature of cloud data lakes enables workloads – like machine learning – to run directly on the data without needing to move data out of the data lake.</li>
+</ul>
+<p>Despite the many benefits of cloud data lakes, there are also some potential drawbacks: </p>
+<ul>
+<li>One challenge is ensuring the quality and governance of data in the lake, particularly as the volume and diversity of data stored in the lake increases.</li>
+<li>Another challenge is the need to move data from the data lake to downstream applications – such as business intelligence tools – which often require additional data copies and can lead to job failures and other downstream issues. </li>
+<li>Additionally, because data is stored in raw formats and written by many different tools and jobs, files may not always be optimized for query engines and low-latency analytical applications.+</li>
+</ul>
+<p>**Lets start up a Dremio DataLakehouse with MinIO and Apache Superset Dashboards **</p>
+<p><span style="text-decoration:underline;">First create a Dremio cloud account:</span></p>
+<p><a href="https://www.dremio.com/resources/tutorials/from-signup-to-subsecond-dashboards-in-minutes-with-dremio-cloud/">https://www.dremio.com/resources/tutorials/from-signup-to-subsecond-dashboards-in-minutes-with-dremio-cloud/</a></p>
+<p><strong><span style="text-decoration:underline;"> Then let’s try out this: <a href="https://github.com/developer-advocacy-dremio/quick-guides-from-dremio/blob/main/guides/superset-dremio.md">https://github.com/developer-advocacy-dremio/quick-guides-from-dremio/blob/main/guides/superset-dremio.md</a></span></strong></p>
+<p><img alt="alt_text" src="images/image30.png" title="image_tooltip" /></p>
+<hr />
+<h3 id="cloud-data-warehouse"><strong>Cloud Data Warehouse</strong></h3>
+<ul>
+<li>The first generation of on-premises data warehouses provide businesses with the ability to derive historical insights from multiple data sources. </li>
+<li>However, this solution required significant investments in terms of both cost and infrastructure management. In response to these challenges, the next generation of data warehouses leveraged cloud-based solutions to address these limitations.</li>
+<li>One of the primary advantages of cloud data warehouses is the ability to separate storage and computing, allowing each component to scale independently. This feature helps to optimize resources and reduce costs associated with on-premises physical servers. </li>
+<li>However, there are also some potential drawbacks to using cloud data warehouses: </li>
+<li>While they do reduce some costs, they can still be relatively expensive.</li>
+<li>Additionally, running any workload where performance matters often requires copying data into the data warehouse before processing, which can lead to additional costs and complexity. </li>
+<li>Moreover, data in cloud data warehouses is often stored in a vendor-specific format, leading to lock-in/lock-out issues, although some cloud data warehouses do offer the option to store data in external storage. </li>
+<li>Finally, support for multiple analytical workloads, particularly those related to unstructured data like machine learning, is still unavailable in some cloud data warehouses.</li>
+</ul>
+<p><img alt="alt_text" src="images/image31.png" title="image_tooltip" /></p>
+<hr />
+<h3 id="future-of-the-data-lakehouse"><strong>Future of the Data Lakehouse</strong></h3>
+<ul>
+<li>Upon discussion of data lake houses, their elements, and what they do, it’s only natural to look at the implications of this technology moving forward. </li>
+<li>The future looks very promising, as more and more organizations are embracing big data and the need for flexible, scalable, and cost-effective solutions for managing it continues to grow. </li>
+<li>In the coming years, expect to see increased adoption of data lake houses, with organizations of all sizes and across all industries recognizing their value in providing a unified platform for managing and analyzing big data. </li>
+<li>Additionally, expect to see continued innovation and advancements in data lakehouse technology, such as improved data processing and transformation capabilities, enhanced security and governance features, and expanded integration with other data management tools and technologies.</li>
+<li>The rise of machine learning and artificial intelligence will drive the need for flexible and scalable big data platforms that can support the development and deployment of these advanced analytics models. </li>
+<li>The future of data lake houses will also be influenced by the increasing importance of data privacy and security, and we can expect to see data lake houses evolving to meet these new requirements, including better data masking and data encryption capabilities. </li>
+<li>Overall, the future of data lake houses looks bright, and they are likely to play an increasingly critical role in helping organizations extract value from their big data.</li>
+</ul>
+<p><strong><span style="text-decoration:underline;">Section 6<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</span></strong></p>
+<p><strong>Model Training, Model Serving and ML Ops</strong></p>
+<p><img alt="alt_text" src="images/image32.png" title="image_tooltip" />
+<strong>MLOps vs LLMOps</strong></p>
+<ul>
+<li>While LLMOps borrows heavily from MLOps, the differences are notable.</li>
+<li>The model training approach in LLMs leans more towards fine-tuning or prompt engineering rather than the frequent retraining typical of traditional Machine Learning (ML).</li>
+<li>In LLMOps, human feedback becomes a pivotal data source that needs to be incorporated from development to production, often requiring a constant human feedback loop in contrast to traditional automated monitoring.</li>
+<li>Automated quality testing faces challenges and may often require human evaluation, particularly during the continuous deployment stage. Incremental rollouts for new models or LLM pipelines have become the norm.</li>
+<li>This transition might also necessitate changes in production tooling, with the need to shift serving from CPUs to GPUs, and the introduction of a new object like a vector and graph databases  into the data layer.</li>
+<li>
+<p>Lastly, managing cost, latency, and performance trade-offs becomes a delicate balancing act, especially when comparing self-tuned models versus paid third-party LLM APIs.</p>
+<p><strong>Continuities With Traditional MLOps</strong></p>
+</li>
+<li>
+<p>Despite these differences, certain foundational principles remain intact.</p>
+</li>
+<li>The dev-staging-production separation, enforcement of access controls, usage of Git and model registries for shipping pipelines and models, and the Data Lake architecture for managing data continue to hold ground. </li>
+<li>Also, the Continuous Integration (CI) infrastructure can be reused, and the modular structure of MLOps, focusing on the development of modular data pipelines and services, remains valid.</li>
+<li>Exploring LLMOps Changes</li>
+<li>As we delve deeper into the changes brought by LLMOps, we will explore the operational aspects of Language Learning Models (LLMs), creating and deploying LLM pipelines, fine-tuning models, and managing cost-performance trade-offs.</li>
+<li>Differentiating between ML and Ops becomes crucial, and tools like MLflow, LangChain, LlamaIndex, and others play key roles in tracking, templating, and automation. </li>
+<li>Packaging models or pipelines for deployment, scaling out for larger data and models, managing cost-performance trade-offs, and gathering human feedback become critical factors for assessing model performance. </li>
+<li>Moreover, the choice between deploying models versus deploying code, and considering service architecture, become essential considerations, especially when deploying multiple pipelines or fine-tuning multiple models.</li>
+</ul>
+<p><img alt="alt_text" src="images/image33.png" title="image_tooltip" /></p>
+<p><strong>A Minimal LLMOps pipeline</strong></p>
+<p><a href="https://github.com/keshavaspanda/BigBertha">https://github.com/keshavaspanda/BigBertha</a>** **</p>
+<p><img alt="alt_text" src="images/image34.png" title="image_tooltip" /></p>
+<h3 id="_1"></h3>
+<p>**LLMOps Capabilities **</p>
+<h4 id="_2"></h4>
+<p><strong>1. LLM Monitoring</strong></p>
+<p>The framework utilizes Prometheus to monitor LLM (Large Language Model) serving modules. For demo purposes, a Streamlit app is used to serve the LLM, and Prometheus scrapes metrics from it. Alerts are set up to detect performance degradation.</p>
+<h4 id="_3"></h4>
+<p><strong>2. Auto-triggering LLM Retraining/Fine-tuning</strong></p>
+<p>Prometheus triggers alerts when the model performance degrades. These alerts are managed by AlertManager, which uses Argo Events to trigger a retraining pipeline to fine-tune the model.</p>
+<h4 id="_4"></h4>
+<p><strong>3. Training, Evaluating, and Logging the Retrained LLM</strong></p>
+<p>The retraining pipeline is orchestrated using Argo Workflows. This pipeline can be tailored to perform LLM-specific retraining, fine-tuning, and metrics tracking. MLflow is used for logging the retrained LLM.</p>
+<h4 id="_5"></h4>
+<p><strong>4. Triggering the Generation of New Vectors for Fresh Data</strong></p>
+<p>MinIO is used for unstructured data storage. Argo Events is set up to listen for upload events on MinIO, triggering a vector ingestion workflow when new data is uploaded.</p>
+<h4 id="_6"></h4>
+<p><strong>5. Ingesting New Vectors into the Knowledge Base</strong></p>
+<p>Argo Workflows is used to run a vector ingestion pipeline that utilizes LlamaIndex for generating and ingesting vectors. These vectors are stored in Milvus, which serves as the knowledge base for retrieval-augmented generation.</p>
+<h3 id="_7"></h3>
+<p><strong>Stack Overview</strong></p>
+<p>This stack relies on several key components:</p>
+<ul>
+<li>ArgoCD: A Kubernetes-native continuous delivery tool that manages all components in the BigBertha stack.</li>
+<li>Argo Workflows: A Kubernetes-native workflow engine used for running vector ingestion and model retraining pipelines.</li>
+<li>Argo Events: A Kubernetes-native event-based dependency manager that connects various applications and components, triggering workflows based on events.</li>
+<li>Prometheus + AlertManager: Used for monitoring and alerting related to model performance.</li>
+<li>LlamaIndex: A framework for connecting LLMs and data sources, used for data ingestion and indexing.</li>
+<li>Milvus: A Kubernetes-native vector database for storing and querying vectors.</li>
+<li>MinIO: An open-source object storage system used for storing unstructured data.</li>
+<li>MLflow: An open-source platform for managing the machine learning lifecycle, including experiment tracking and model management.</li>
+<li>Kubernetes: The container orchestration platform that automates the deployment, scaling, and management of containerized applications.</li>
+<li>Docker Containers: Docker containers are used for packaging and running applications in a consistent and reproducible manner.</li>
+</ul>
+<h3 id="_8"></h3>
+<p><strong>Demo Chatbot</strong></p>
+<p>As a demonstration, the framework includes a Streamlit-based chatbot that serves a Llama2 7B quantized chatbot model. </p>
+<p>A simple Flask app is used to expose metrics, and Redis acts as an intermediary between Streamlit and Flask processes.</p>
+<p><strong><span style="text-decoration:underline;">Section 7<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</span></strong></p>
+<p>** Pipeline Debt, Data Testing, Model Testing in MLOps **</p>
+<ul>
+<li>You are now part of a data science team at your organization </li>
+<li>Your team has a number of machine learning models in place</li>
+<li>Their outputs guide critical business decisions, as well as dashboards displaying important financial KPIs </li>
+<li>These KPIs are closely watched by your executives day/night </li>
+<li>Early AM, as you are navigating traffic to your office, you suddenly start receiving multiple messages, calls and emails (simultaneously) </li>
+<li>These are from your manager as well as other teams and from senior management </li>
+<li>They are all complaining about the same thing: The high visibility business metrics dashboard that you and your team had built the pipelines &amp; dashboards for and deployed as well as many of the dashboards  that many other teams were using (which you did not know until today) were displaying what seemed to be random numbers (except every full hour, when the KPIs look okay for a short time) </li>
+<li>The financial models that are part of the pipelines are predicting the company’s insolvency looming fast.</li>
+<li>Once you get in and hurriedly try to put in some quick fixes in the pipeline (excluding predictions beyond thresholds etc.) you find out that every fix results in your data engineering and research teams reporting new broken services and models in the pipelines.</li>
+<li>This is the <strong><em>Debt Collection Day scenario</em></strong> we are trying to avoid desperately here. </li>
+<li>Of all debts in data engineering the most vengeful unpaid debt is Pipeline Debt. </li>
+</ul>
+<p><strong>The roots of  Pipeline Debt <em>(aka The road to hell is paved with good intentions)</em></strong></p>
+<ul>
+<li>A few months ago You were just about to start that new exciting machine learning project. </li>
+<li>You had located useful data scattered around your company’s databases, <a href="https://neptune.ai/blog/feature-stores-components-of-a-data-science-factory-guide">feature stores</a>, documents, videos, audios and spreadsheets belonging to employees which they (reluctantly) gave you access to (cross silo collaboration is hard). </li>
+<li>To make the data usable, you constructed a data pipeline: a set of jobs and Python functions that ingest, process, clean and combine all these data. </li>
+<li>The pipeline feeds the data into a machine learning model. </li>
+<li>The entire process is depicted schematically below.</li>
+</ul>
+<p><img alt="alt_text" src="images/image35.png" title="image_tooltip" />
+Simple manageable data pipelines </p>
+<p>The first data pipelines worked well, consistently populating the downstream machine learning model with data, which turned it into accurate predictions. </p>
+<p>However, the model deployed as a service in the cloud was not very actionable.To make it more useful, you built a set of dashboards for presenting the model’s output as well as important KPIs to the business stakeholders, The pipeline deepened</p>
+<p><img alt="alt_text" src="images/image36.png" title="image_tooltip" />
+Extended pipelines</p>
+<ul>
+<li>You were telling a colleague from the research team about your project over lunch who decided to do something similar with their data, making the company’s data pipeline wider and cross-team-border.</li>
+</ul>
+<p><img alt="alt_text" src="images/image37.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>More pipelines, more complexity
+</code></pre></div>
+<ul>
+<li>A few weeks later the two of you who were informally collaborating on these dashboards got together and talked about each of your pipelines and dashboards. </li>
+<li>As you’ve learned more about what the research team was up to, both of you noticed how useful and valuable it would be if your two teams used each other’s data for powering your respective models and analyses. </li>
+<li>Upon implementing this idea, the company’s data pipeline was looking like this.</li>
+</ul>
+<p><img alt="alt_text" src="images/image38.png" title="image_tooltip" />
+If multiple pipelines exist, they will inevitably blend</p>
+<ul>
+<li>This diagram should have made you flinch – what they show is <strong><em>accumulating pipeline debt</em></strong> which is technical debt in data pipelines </li>
+<li>It arises when your data pipelines are triple-U: <strong><em>Undocumented, Untested, Unstable</em></strong></li>
+<li>It comes in many flavors but all share some characteristics. </li>
+<li>The system is entangled; so, a change in one place can derail a different process elsewhere. </li>
+<li>This makes code refactoring and debugging exceptionally hard. </li>
+<li>For a software engineer, this will sound like a solved problem </li>
+<li>The solution is called automated testing. </li>
+<li>However, testing software is very different from testing data in two major ways:<ul>
+<li>First, while you have full control over your code and can change it when it doesn’t work, you can’t always change your data; in many cases, you are merely an observer watching data as it comes, generated by some real-world process.</li>
+<li>Second, software code is always right or wrong: either it does what it is designed to do, or it doesn’t. Data is never right or wrong. It can only be suitable or not for a particular purpose. </li>
+</ul>
+</li>
+<li>This is why automated testing needs a special approach when data is involved.</li>
+</ul>
+<p><strong>Testing machine learning models</strong></p>
+<ul>
+<li>Fundamentally when testing ML Models, we are asking the question: “Do we know if the model actually works?” </li>
+<li>We want to be sure that the learned model will behave consistently and produce the results expected of it <strong><em>per expectation. </em></strong></li>
+</ul>
+<p><img alt="alt_text" src="images/image39.png" title="image_tooltip" /></p>
+<p><strong><em>A typical workflow for software development.</em></strong></p>
+<ul>
+<li>In traditional software development, when we run our testing suite against the code, we'll get a report of the specific behaviors that we've written tests around and verify that our code changes don't affect the expected behavior of the system. </li>
+<li>If a test fails, we'll know which specific behavior is no longer aligned with our expected output. </li>
+<li>We can also look at this testing report to get an understanding of how extensive our tests are by looking at metrics such as <a href="https://en.wikipedia.org/wiki/Code_coverage?ref=jeremyjordan.me">code coverage</a>.</li>
+</ul>
+<p><img alt="alt_text" src="images/image40.png" title="image_tooltip" /></p>
+<ul>
+<li>Unlike traditional software applications, it is not as straightforward to establish a standard for testing ML applications </li>
+<li>This is because the tests do not just depend on the software, they also rely on<ul>
+<li>the business context</li>
+<li>problem domain</li>
+<li>the dataset used</li>
+<li>the model selected. </li>
+</ul>
+</li>
+<li>Most teams are comfortable using model <a href="https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide">evaluation metrics</a> to quantify a model’s performance before deploying it, but <a href="https://www.jeremyjordan.me/testing-ml#what-s-the-difference-between-model-testing-and-model-evaluation">these metrics are just not enough</a> to ensure ML models are ready for production deployment and use. </li>
+<li>Contrast a typical software development workflow with one for developing machine learning systems. <ul>
+<li>After training a new model, we'll typically produce an evaluation report including:</li>
+<li>performance of an established metric on a validation dataset,</li>
+<li>plots such as precision-recall curves,</li>
+<li>operational statistics such as inference speed,</li>
+<li>examples where the model was most confidently incorrect,</li>
+</ul>
+</li>
+</ul>
+<p><strong>We will rigorously follow practices such as:</strong></p>
+<ul>
+<li>Save all of the hyper-parameters used to train the model along with the model,</li>
+<li>Only promote models which offer an <strong><em>improvement </em></strong>over the existing model (or baseline) when evaluated on the same dataset.</li>
+</ul>
+<p><img alt="alt_text" src="images/image41.png" title="image_tooltip" />
+A typical workflow for model development.</p>
+<ul>
+<li>When reviewing a new machine learning model, we'll inspect metrics and plots which summarize model performance over a validation dataset. </li>
+<li>We're able to compare performance between multiple models and make relative judgements, but we're not immediately able to characterize specific model behaviors. </li>
+<li>For example, figuring out <strong><em>where</em> </strong>the model is failing usually requires additional investigative work </li>
+<li>One common practice here is to look through a list of the top most egregious model errors on the validation dataset and manually categorize these failure modes.</li>
+<li>Assuming we write behavioral tests for our models (discussed below), there's also the question of whether or not we have <strong><em>enough </em></strong>tests! </li>
+<li>While traditional software tests have metrics such as the lines of code covered when running tests, this becomes harder to quantify when you shift your application logic from lines of code to <strong><em>parameters of a machine learning model</em></strong>. </li>
+<li>Do we want to quantify our test coverage with respect to the input data distribution? Or perhaps the possible <strong><em>activations </em></strong>inside the model?</li>
+<li>_<a href="http://proceedings.mlr.press/v97/odena19a/odena19a.pdf?ref=jeremyjordan.me">Odena et al</a>. introduce one possible metric for coverage where we track the model logits for all of the test examples and quantify the area covered by radial neighborhoods around these activation vectors. _</li>
+<li>_As an industry we <strong>don't </strong>have well-established standards here _</li>
+<li>_Testing for machine learning systems is in early days _</li>
+<li><em>The question of ML Model Test coverage isn't really being asked by most people (certainly not in industry).</em></li>
+</ul>
+<h3 id="difference-between-model-testing-and-model-evaluation"><strong>Difference between model testing and model evaluation</strong></h3>
+<ul>
+<li>While reporting evaluation metrics is certainly a good practice for quality assurance during model development, it is insufficient. </li>
+<li>Without a <strong>granular report of specific behaviors</strong>, we won't be able to immediately understand the nuances of how behavior may change if we switch over to the new model. </li>
+<li>Additionally, we won't be able to track (and prevent) <strong><em>behavioral regressions</em></strong> for specific failure modes that had been previously addressed.</li>
+<li>This can be especially dangerous for machine learning systems since oftentimes failures happen silently. </li>
+<li>For example, <ul>
+<li>you might improve the overall evaluation metric but introduce a regression on a critical subset of data. </li>
+<li>Or you could unknowingly add a gender bias to the model through the inclusion of a new dataset during training. </li>
+</ul>
+</li>
+<li>We need more nuanced reports of model behavior to identify such cases, which is exactly where model testing can help.</li>
+<li>For machine learning systems, we should be running model evaluation and model tests in parallel.</li>
+<li><strong>Model evaluation</strong> covers metrics and plots which summarize performance on a validation or test dataset.</li>
+<li><strong>Model testing</strong> involves explicit checks for behaviors that we expect our model to follow.</li>
+<li>Both of these perspectives are instrumental in building high-quality models.</li>
+<li>In practice, most people are doing a combination of the two where evaluation metrics are calculated automatically and some level of model "testing" is done <a href="https://www.coursera.org/learn/machine-learning-projects/lecture/GwViP/carrying-out-error-analysis?ref=jeremyjordan.me">manually through error analysis</a> (i.e. classifying failure modes). </li>
+<li>Developing model tests for machine learning systems can offer a systematic approach towards error analysis.</li>
+</ul>
+<h3 id="how-do-you-write-model-tests"><strong>How do you write model tests?</strong></h3>
+<p>There are two types of model tests needed.</p>
+<ul>
+<li><strong>Pre-train</strong> <strong>tests</strong> allow us to identify some bugs early on and short-circuit a training job.</li>
+<li><strong>Post-train tests</strong> use the trained model artifact to inspect behaviors for a variety of important scenarios that we define.</li>
+</ul>
+<h4 id="pre-train-tests"><strong>Pre-train tests</strong></h4>
+<p>There are some tests that we can run without needing trained parameters. These tests include:</p>
+<ul>
+<li>check the shape of your model output and ensure it aligns with the labels in your dataset</li>
+<li>check the output ranges and ensure it aligns with our expectations (eg. the output of a classification model should be a distribution with class probabilities that sum to 1)</li>
+<li>make sure a single gradient step on a batch of data yields a decrease in your loss</li>
+<li>make <a href="https://greatexpectations.io/?ref=jeremyjordan.me">assertions about your datasets</a></li>
+<li>check for label leakage between your training and validation datasets</li>
+</ul>
+<p>The main goal here is to identify some errors early so we can avoid a wasted training job.</p>
+<h4 id="post-train-tests"><strong>Post-train tests</strong></h4>
+<ul>
+<li>However, in order for us to be able to understand model behaviors we'll need to test against trained model artifacts. </li>
+<li>These tests aim to <strong>interrogate the logic learned during training</strong> and provide us with a behavioral report of model performance.</li>
+</ul>
+<p><strong><em>Reference: <a href="https://homes.cs.washington.edu/~marcotcr/acl20_checklist.pdf?ref=jeremyjordan.me">Beyond Accuracy: Behavioral Testing of NLP Models with CheckList</a></em></strong></p>
+<ul>
+<li>Three different types of model tests can be used to understand behavioral attributes.</li>
+<li><strong>Invariance Tests</strong></li>
+<li>Invariance tests allow us to describe a set of perturbations we should be able to make to the input without affecting the model's output. </li>
+<li>We can use these perturbations to produce pairs of input examples (original and perturbed) and check for consistency in the model predictions. </li>
+<li>This is closely related to the concept of data augmentation, where we apply perturbations to inputs during training and preserve the original label.</li>
+<li>For example, imagine running a sentiment analysis model on the following two sentences:<ul>
+<li>Mark was a great instructor.</li>
+<li>Samantha was a great instructor.</li>
+</ul>
+</li>
+<li>We would expect that simply changing the name of the subject doesn't affect the model predictions.</li>
+<li><strong>Directional Expectation Tests</strong></li>
+<li>Directional expectation tests, on the other hand, allow us to define a set of perturbations to the input which <em>should</em> have a <em>predictable</em> effect on the model output.</li>
+<li>For example, if we had a housing price prediction model we might assert:</li>
+<li>Increasing the number of bathrooms (holding all other features constant) should not cause a drop in price.</li>
+<li>Lowering the square footage of the house (holding all other features constant) should not cause an increase in price.</li>
+<li>Let's consider a scenario where a model fails the second test - taking a random row from our validation dataset and decreasing the feature <code>house_sq_ft</code> yields a higher predicted price than the original label. <ul>
+<li>This is surprising as it doesn't match our intuition, so we decide to look further into it </li>
+<li>We realize that,_ without having a feature for the house's neighborhood/location, our model has learned that smaller units tend to be more expensive; this is due to the fact that smaller units from our dataset are more prevalent in cities where prices are generally higher. _</li>
+</ul>
+</li>
+<li>In this case, the <em>selection</em> of our dataset has influenced the model's logic in unintended ways - this isn't something we would have been able to identify simply by examining performance on a validation dataset.</li>
+<li><strong>Minimum Functionality Tests (aka data unit tests)</strong></li>
+<li>Just as software unit tests aim to isolate and test atomic components in your codebase, data unit tests allow us to quantify model performance for specific cases found in your data.</li>
+<li>This allows you to identify critical scenarios where prediction errors lead to high consequences. </li>
+<li>You may also decide to write data unit tests for failure modes that you uncover during error analysis; this allows you to "automate" searching for such errors in future models.</li>
+<li>Take a look at Snorkel (<a href="https://www.snorkel.org/">https://www.snorkel.org/</a>) who have introduced a very similar approach through their concept of _<a href="https://www.snorkel.org/use-cases/03-spam-data-slicing-tutorial?ref=jeremyjordan.me">slicing functions</a>. _</li>
+<li>These are programmatic functions which allow us to identify subsets of a dataset which meet certain criteria. </li>
+<li>For example, you might write a slicing function to identify sentences less than 5 words to evaluate how the model performs on short pieces of text.</li>
+</ul>
+<h4 id="organizing-tests"><strong>Organizing tests</strong></h4>
+<ul>
+<li>In traditional software tests, we typically organize our tests to mirror the structure of the code repository. </li>
+<li>However, this approach doesn't translate well to machine learning models since our logic is structured by the parameters of the model.</li>
+<li>The authors of the CheckList paper linked above recommend structuring your tests around the "skills" we expect the model to acquire while learning to perform a given task.</li>
+</ul>
+<p>For example, a sentiment analysis model might be expected to gain some understanding of:</p>
+<ul>
+<li>vocabulary and parts of speech,</li>
+<li>robustness to noise,</li>
+<li>identifying named entities,</li>
+<li>temporal relationships,</li>
+<li>and negation of words.</li>
+</ul>
+<p>For an image recognition model, we might expect the model to learn concepts such as:</p>
+<ul>
+<li>object rotation,</li>
+<li>partial occlusion,</li>
+<li>perspective shift,</li>
+<li>lighting conditions,</li>
+<li>weather artifacts (rain, snow, fog),</li>
+<li>and camera artifacts (ISO noise, motion blur).</li>
+<li></li>
+</ul>
+<h4 id="_9"></h4>
+<div class="highlight"><pre><span></span><code>**Model development pipeline**
+</code></pre></div>
+<p><img alt="alt_text" src="images/image42.png" title="image_tooltip" /></p>
+<ul>
+<li>We also need to perform thorough testing of the <strong><em>models </em></strong>to ensure they are robust enough for real-world use.</li>
+<li>Let's go through some of the ways we can perform testing for different scenarios.ML testing is problem-dependent. </li>
+<li>This is <strong><em>not </em></strong>a template approach but rather a guide to what types of test suites you might want to establish for your application based on your use case.</li>
+</ul>
+<p><img alt="alt_text" src="images/image43.png" title="image_tooltip" /></p>
+<p>**Developing, testing, and deploying machine learning models **</p>
+<p><strong>Combining automated tests and manual validation for effective model testing</strong></p>
+<ul>
+<li>To perform ML testing in their projects, this approach involves having a few levels of tests suites, as well as validation:</li>
+<li>Automated tests for model verification</li>
+<li>Manual model evaluation and validation.</li>
+<li>To implement automated tests in their workflow, <a href="https://www.gitops.tech/">GitOps</a> can be used. </li>
+<li><a href="https://www.jenkins.io/">Jenkins</a> runs code quality checks and <a href="https://en.wikipedia.org/wiki/Smoke_testing_(software)">smoke tests</a> using production-like runs in the test environment. </li>
+<li>A single pipeline for model code is created where every pull request goes through code reviews and automated unit tests.</li>
+<li>The <a href="https://www.atlassian.com/git/tutorials/making-a-pull-request">pull requests</a> also go through automated smoke tests. </li>
+<li>The automated test suites’ goal was to make sure tests flagged erroneous code early in the development process.</li>
+<li>After the automation tests are run and passed by the model pipeline, a domain expert manually reviewed the evaluation metrics to make sure that they made sense, validated them, and marked them ready for deployment.</li>
+</ul>
+<p><strong>Automated tests for model verification</strong></p>
+<p>The workflow for the automated tests will be that whenever someone on the team made a commit, </p>
+<ul>
+<li>the smoke test would run to ensure the code worked, </li>
+<li>then the unit tests would run, making sure that the assertions in the code and data were met. </li>
+<li>Finally, the integration tests would run to ensure the model works well with other components in the pipeline.</li>
+</ul>
+<p><strong>Automated smoke test</strong></p>
+<ul>
+<li>Every pull request goes through automated smoke tests where the team trained models and made predictions, running the entire end-to-end pipeline on some <strong><em>small chunk of actual data</em></strong> to ensure the pipeline worked as expected and nothing broke. </li>
+<li>The right kind of testing for the smoke suite can give any team a chance to understand the quality of their pipeline before deploying it. </li>
+<li>Running the smoke test suite does not mean the entire pipeline is guaranteed to be fully working because the code passed. </li>
+<li>The team has to consider the unit test suite to test data and model assumptions.</li>
+</ul>
+<p><strong>Automated unit and integration tests</strong></p>
+<ul>
+<li>The unit and integration tests the team run will check assertions about the dataset to prevent low-quality data from entering the training pipeline and prevent problems with the data preprocessing code. </li>
+<li>You could think of these assertions as assumptions the team made about the data. </li>
+<li>For example, they would expect to see some kind of correlation in the data or see that the model’s prediction bounds are non-negative.</li>
+<li>Unit testing machine learning code is more challenging than typical software code. </li>
+<li>Unit testing several aspects of the model code is very difficult for a team. </li>
+<li>For example, to test accurately, teams would have to train the model, and even with a modest data set, a unit test could take a long time.</li>
+<li>Furthermore, some of the tests could be erratic and flaky (failed at random). </li>
+<li>One of the challenges of running the unit tests to assert the data quality is that running these tests on sample datasets was more complex and took way less time than running them on the entire dataset. </li>
+<li>It was difficult to fix for the team but to address the issues. </li>
+<li>Some teams opt to eliminate part of the unit tests in favor of smoke tests. </li>
+<li>The team defines acceptance criteria and their test suite continuously evolves as they experiment by adding new tests, and removing others, gaining more knowledge on what works and what doesn't.</li>
+<li>The model is trained in a production-like environment on a complete dataset for each new pull request, except that they would adjust the hyperparameters at values that resulted in quick results. Finally, they would monitor the pipeline’s health for any issues and catch them early.</li>
+</ul>
+<p><img alt="alt_text" src="images/image44.png" title="image_tooltip" />
+The MLOps toolstack <strong>including testing tools</strong></p>
+<p><strong>Manual model evaluation and validation</strong></p>
+<ul>
+<li>Have a human-in-the-loop framework where after training the model, reports are  created with different plots showing results based on the dataset, so the domain experts could review them before the model could be shipped.</li>
+<li>After training the model, a domain expert generated and reviewed a model quality report. </li>
+<li>The expert would approve (or deny) the model through a manual auditing process before it could eventually be shipped to production by the team after getting validation and passing all previous tests.</li>
+</ul>
+<p><strong>Stress Tests and A/B Tests</strong></p>
+<ul>
+<li>Once the pipeline generates the build (a container image), the models are stress-tested in a production-like environment through the <a href="https://docs.microsoft.com/en-in/azure/devops/pipelines/build/triggers?view=azure-devops#classic-release-pipelines">release pipelines</a>. </li>
+<li>Depending on the use case, the team also carried out <a href="https://www.seldon.io/a-b-testing-for-machine-learning/">A/B tests</a> to understand how their models performed in varying conditions before they deployed them, rather than relying purely on offline evaluation metrics. </li>
+<li>With what they learned from the A/B tests, they knew whether a new model improved a current model and tuned their model to optimize the business metrics better.</li>
+</ul>
+<p><strong>Stress testing machine learning models</strong></p>
+<ul>
+<li>Testing the model’s performance under extreme workloads is crucial for business applications that typically expect high traffic from users. </li>
+<li>Therefore, the team performed <a href="https://en.wikipedia.org/wiki/Stress_testing_(software)">stress tests</a> to see how responsive and stable the model would be under an increased number of prediction requests at a given time scale. </li>
+<li>This way, they benchmarked the model’s scalability under load and identified the breaking point of the model. In addition, the test helped them determine if the model’s prediction service meets the required service-level objective (SLO) with uptime or response time metrics.</li>
+<li>It is worth noting that the point of stress testing the model<strong><em> isn’t so much to see how many inference requests the model could handle as to see what would happen when users exceed such traffic.</em></strong> </li>
+<li>This way, you can understand the model’s performance problems, including the load time, response time, and other bottlenecks.</li>
+</ul>
+<p><strong>Testing model quality after deployment</strong></p>
+<ul>
+<li>The goal of the testing production models is to ensure that the deployment of the model is successful and the model works correctly in production together with other services. For this team, testing the inference performance of the model in production was a crucial process for continuously providing business value. </li>
+<li>In addition, the team tested for data and model drift to make sure models could be monitored and perhaps retrained when such drift was detected. On another note, testing production models can enable teams to perform error analysis on their mission-critical models through manual inspection from domain experts.</li>
+</ul>
+<p><img alt="alt_text" src="images/image45.png" title="image_tooltip" />
+- An example of a dashboard showing information on data drift for a machine learning project in Azure ML Studio | <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=azure-studio#understand-data-drift-results">Source</a></p>
+<p><strong>Drift MonitoringExample:</strong></p>
+<p><a href="https://github.com/keshavaspanda/drift-monitoring">https://github.com/keshavaspanda/drift-monitoring</a></p>
+<p>** Behavioral tests for ML (Natural language processing (NLP) and classification tasks)**</p>
+<ul>
+<li>Business use case: The transaction metadata product at MonoHQ uses machine learning to classify transaction statements that are helpful for a variety of corporate customer applications such as credit application, asset planning/management, BNPL (buy now pay later), and payment. Based on the narration, the product classifies transactions for thousands of customers into different categories.</li>
+<li>Before deploying the model, the team conducts a behavioral test. This test consists of 3 elements:</li>
+<li>Prediction distribution,</li>
+<li>Failure rate,</li>
+<li>Latency.</li>
+<li>If the model passes the three tests, the team lists it for deployment. If the model does not pass the tests, they would have to re-work it until it passes the test. They always ensure that they set a performance threshold as a metric for these tests.</li>
+<li>They also perform A/B tests on their models to learn what version is better to put into the production environment.</li>
+</ul>
+<p><strong>Behavioral tests to check for prediction quality</strong></p>
+<ul>
+<li>This test shows how the model responds to inference data, especially NLP models. </li>
+<li>First, the team runs an <a href="https://deepchecks.com/how-to-test-machine-learning-models/#Invariance">invariance test</a>, introducing perturbability to the input data.</li>
+<li>Next, they check if the slight change in the input affects the model response—its ability to correctly classify the narration for a customer transaction. </li>
+<li>Essentially, they are trying to answer here: does a minor tweak in the dataset with a similar context produce consistent output?</li>
+</ul>
+<p><strong>Performance testing for machine learning models</strong></p>
+<ul>
+<li>To test the response time of the model under load, the team configures a testing environment where they would send a lot of traffic to the model service. Here’s their process:</li>
+<li>They take a large amount of transaction dataset,</li>
+<li>Create a table, </li>
+<li>Stream the data to the model service,</li>
+<li>Record the inference latency,</li>
+<li>And finally, calculate the average response time for the entire transaction data.</li>
+<li>If the response time passes a specified latency threshold, it is up for deployment. If it doesn’t, the team would have to rework it to improve it or devise another strategy to deploy the model to reduce the latency. </li>
+</ul>
+<p><strong>A/B testing machine learning models</strong></p>
+<ul>
+<li>For this test, the team containerizes two models to deploy to the production system for upstream services to consume to the production system. </li>
+<li>They deploy one of the models to serve traffic from a random sample of users and another to a different sample of users so they can measure the real impact of the model’s results on their users. </li>
+<li>In addition, they can tune their models using their real customers and measure how they react to the model predictions. </li>
+<li>This test also helps the team avoid introducing complexity from newly trained that are difficult to maintain and add no value to their users.</li>
+</ul>
+<p>** Performing  model engineering and statistical tests for machine learning applications**</p>
+<ul>
+<li>This team performed two types of tests on their machine learning projects:</li>
+<li>Engineering-based tests (unit and integration tests),</li>
+<li>Statistical-based tests (model validation and evaluation metrics). </li>
+<li>The engineering team ran the unit tests and checked whether the model threw errors. </li>
+<li>Then, the data team would hand off (to the engineering team) a mock model with the same input-output relationship as the model they were building. </li>
+<li>Also, the engineering team would test this model to ensure it does not break the production system and then serve it until the correct model from the data team is ready.</li>
+<li>Once the data team and stakeholders evaluate and validate that the model is ready for deployment, the engineering team will run an integration test with the original model. </li>
+<li>Finally, they will swap the mock model with the original model in production if it works.</li>
+</ul>
+<p><strong>Engineering-based test for machine learning models</strong></p>
+<ul>
+<li>Unit and integration tests</li>
+<li>To run an initial test to check if the model will integrate well with other services in production, the data team will send a mock (or dummy) model to the engineering team. </li>
+<li>The mock model has the same structure as the real model, but it only returns the random output. </li>
+<li>The engineering team will write the service for the mock model and prepare it for testing.</li>
+<li>The data team will provide data and input structures to the engineering team to test whether the input-output relationships match with what they expect, if they are coming in the correct format, and do not throw any errors. </li>
+<li>The engineering team does not check whether that model is the correct model; they only check if it works from an engineering perspective. </li>
+<li>They do this to ensure that when the model goes into production, it will not break the product pipeline.</li>
+<li>When the data team trains and evaluates the correct model and stakeholders validate it, the data team will package it and hand it off to the engineering team. </li>
+<li>The engineering team will swap the mock model with the correct model and then run integration tests to ensure that it works as expected and does not throw any errors.</li>
+</ul>
+<p><strong>Statistical-based test for machine learning models</strong></p>
+<ul>
+<li>The data team would train, test, and validate their model on real-world data and <a href="https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide">statistical evaluation metrics</a>. </li>
+<li>The head of data science audits the results and approves (or denies) the model. If there is evidence that the model is the correct model, the head of data science will report the results to the necessary stakeholders. </li>
+<li>He will explain the results and inner workings of the model, the risks of the model, and the errors it makes, and confirm if they are comfortable with the results or the model still needs to be re-worked. </li>
+<li>If the model is approved, the engineering team swaps the mock model with the original model, reruns an integration test to confirm that it does not throw any error, and then deploy it.</li>
+<li>Model evaluation metrics are <strong>not</strong> enough to ensure your models are ready for production. </li>
+<li>You also need to perform thorough testing of your models to ensure they are robust enough for real-world encounters.</li>
+<li>Developing tests for ML models can help teams systematically analyze model errors and detect failure modes, so resolution plans are made and implemented before deploying the models to production.</li>
+</ul>
+<p>**Automated testing with Great Expectations **</p>
+<p><img alt="alt_text" src="images/image46.png" title="image_tooltip" /></p>
+<p>Automated testing tailored for data pipelines is the premise of Great Expectations, a widely used open-source Python package for data validation.</p>
+<p><a href="https://medium.com/dataroots/great-expectations-tutorial-by-paolo-l%C3%A9onard-95e689d73702">https://medium.com/dataroots/great-expectations-tutorial-by-paolo-l%C3%A9onard-95e689d73702</a></p>
+<ul>
+<li>The package is built around the concept of an expectation. </li>
+<li>The expectation can be thought of as a unit test for data. It is a declarative statement that describes the property of a dataset and does so in a simple, human-readable language.</li>
+<li>For example, to assert that the values of the column “num_complaints” in some table in between one and five, you can write:</li>
+</ul>
+<p>expect_column_values_to_be_between(</p>
+<div class="highlight"><pre><span></span><code>column=&quot;num_complaints&quot;,
+
+min_value=1,
+
+max_value=5,
+</code></pre></div>
+<p>)</p>
+<ul>
+<li>This statement will validate your data and return a success or a failure result. </li>
+<li>As we have already mentioned, you do not always control your data but rather passively observe it flowing. It is often the case that an atypical value pops up in your data from time to time without necessarily being a reason for distress. Great - Expectations accommodate this via the “mostly” keyword which allows for describing how often should the expectation be matched.</li>
+</ul>
+<p>expect_column_values_to_be_between(</p>
+<div class="highlight"><pre><span></span><code>column=&quot;num_complaints&quot;,
+
+min_value=1,
+
+max_value=5,
+
+mostly=0.95,
+</code></pre></div>
+<p>)</p>
+<ul>
+<li>The above statement will return success if at least 95% of “num_complaints” values are between one and five.</li>
+<li>In order to understand the data well, it is crucial to have some context about why we expect certain properties from it. </li>
+<li>We can simply add it by passing the “meta”  parameter to the expectation with any relevant information about how it came to be. Our colleagues or even our future selves will thank us for it.</li>
+</ul>
+<p>expect_column_values_to_be_between(</p>
+<div class="highlight"><pre><span></span><code>column=&quot;num_complaints&quot;,
+
+min_value=1,
+
+max_value=5,
+
+mostly=0.95,
+
+meta={
+
+    “created_by”: “Michal”,
+
+    “craeted_on”: “28.03.2022”,
+
+    “notes”: “number of client complaints; more than 5 is unusual”
+
+             “and likely means something broke”,
+
+}
+</code></pre></div>
+<p>)</p>
+<ul>
+<li>These metadata notes will also form a basis for the data documentation which Great Expectations can just generate out of thin air – but more on this later!</li>
+<li>The package contains several dozen expectations to use out of the box, all of them with wordy, human-readable names such as “expect_column_distinct_values_to_be_in_set”, “expect_column_sum_to_be_between”, or “expect_column_kl_divergence_to_be_less_than”. This syntax allows one to clearly state what is expected of the data and why. </li>
+<li>Some expectations are applicable to column values, others to their aggregate functions or entire density distributions. Naturally, the package also makes it possible to easily create custom expectations for when a tailored solution is needed.</li>
+<li>Great Expectations works with many different backends. </li>
+<li>You can evaluate your expectations locally on a Pandas data frame just as easily as on a SQL database (via SQLAlchemy) or on an Apache Spark cluster.</li>
+<li>So, how do the expectations help to reduce pipeline debt? The answer to this is multifold. </li>
+<li>
+<ol>
+<li>The process of crafting the expectations forces us to sit and ponder about our data: its nature, sources, and what can go wrong with it. This creates a deeper understanding and improves data-related communication within the team.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>By clearly stating what we expect from the data, we can detect any unusual situations such as system outages early on.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>By validating new data against a set of pre-existing expectations we can be sure we don’t feed our machine learning models garbage.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Having the expectations defined brings us very close to having well-maintained data documentation in place. The list goes on and on.</li>
+</ol>
+</li>
+</ul>
+<p>A few specific use cases in which investing time in GE pays back a great deal are:</p>
+<p><strong>Detecting data drift</strong></p>
+<ul>
+<li>A notorious danger to machine learning models deployed in production is <a href="https://towardsdatascience.com/dont-let-your-model-s-quality-drift-away-53d2f7899c09">data drift</a>. Data drift is a situation when the distribution of model inputs changes. This can happen for a multitude of reasons: data-collecting devices tend to break or have their software updated, which impacts the way data is being recorded. If the data is produced by humans, it is even more volatile as fashions and demographics evolve quickly.</li>
+<li><a href="https://neptune.ai/blog/concept-drift-best-practices">Data drift constitutes a serious problem for machine learning models</a>. It can make the decision boundaries learned by the algorithm invalid for the new-regime data, which has a detrimental impact on the model’s performance.</li>
+<li>Data drift may impact the model’s performance</li>
+<li>You have collected and cleaned your data, experimented with various machine learning models and data preprocessing variants and fine-tuned your model’s hyperparameters to finally come up with a solution good enough for your problem. </li>
+<li>Then, you’ve built a robust, automatic data pipeline, wrote an API for the model, put it in a container, and deployed it to the production environment. </li>
+<li>You even made sure to check that the model runs smoothly and correctly in production. Finally, you're done! Or are you? </li>
+<li>Not even close. In fact, this is just the beginning of the journey.</li>
+<li>There are so many things that could go wrong with a machine learning system after it has been deployed to production! </li>
+<li>Broadly speaking, we can divide all these potential concerns into two buckets: statistical issues and infrastructure issues. </li>
+<li>The latter comprise things like computing resources and memory (are there enough?), latency (is the model responding quickly enough?), throughput (can we answer all the incoming requests?), and so on. </li>
+<li>Here, we’ll focus on the former: the statistical issues, which come in two main flavors: data drift and concept drift.</li>
+<li>Enters data validation. </li>
+<li>In situations where data drift could be of concern, just create expectations about the model input features that validate their long-term trend, average values, or historic range and volatility. </li>
+<li>As soon as the world changes and your incoming data starts to look differently, GE will alert you by spitting out an array of failed tests!</li>
+</ul>
+<p><strong>Preventing outliers from distorting model outputs</strong></p>
+<ul>
+<li>Another threat to models deployed in production, slightly similar to the data drift, are outliers. </li>
+<li>What happens to a model’s output when it gets an unusual value as input, typically very high or very low? </li>
+<li>If the model has not seen such an extreme value during training, an honest answer for it would be to say: I don’t know what the prediction should be!</li>
+<li>Unfortunately, machine learning models are not this honest. Much to the contrary: the model will likely produce some output that will be highly unreliable without any warning.</li>
+<li>Fortunately, one can easily prevent it with a proper expectations suite! Just set allowed ranges for the model’s input features based on what it has seen in training to make sure you are not making predictions based on outliers.</li>
+</ul>
+<p><strong>Preventing pipeline failures from spilling over</strong></p>
+<ul>
+<li>Data pipelines do fail sometimes. You might have missed a corner case. Or the power might have gone off for a moment in your server room. </li>
+<li>Whatever the reason, it happens that a data processing job expecting new files to appear somewhere suddenly finds none.</li>
+<li>If this makes the code fail, that’s not necessarily bad.  </li>
+<li>But often it doesn’t: the job succeeds, announcing happily to the downstream systems that your website had 0 visits on the previous day. </li>
+<li>These data points are then shown on KPI dashboards or even worse, are fed into models that automatically retrain. </li>
+<li>Q: How do we prevent such a scenario? Expect recent data – for instance, with a fresh enough timestamp – to be there.</li>
+</ul>
+<p><strong>Detecting harmful biases</strong></p>
+<ul>
+<li>Bias in machine learning models is a topic that has seen increasing awareness and interest recently. </li>
+<li>This is crucial, considering how profoundly the models can impact people’s lives. The open question is how to detect and prevent these biases from doing charm.</li>
+<li>While by no means do they provide an ultimate answer, Great Expectations can at least help us in detecting dangerous biases. </li>
+</ul>
+<p><strong>Fairness</strong></p>
+<ul>
+<li>Fairness in machine learning is a vast and complex topic, so let us focus on two small parts of the big picture: the training data that goes into the model, and the predictions produced by it for different test inputs.</li>
+<li>When it comes to the training data, we want it to be fair and unbiased, whatever that means in our particular case. </li>
+<li>If the data is about users, for instance, you might want to include users from various geographies in appropriate proportions, matching their global population. Whether or not this is the case can be checked by validating each batch of training data against an appropriate expectations suite before the data is allowed to be used for training.</li>
+<li>As for the model’s output, we might want it, for instance, to produce the same predictions for both women and men if their remaining characteristics are the same. To ensure this, just test the model on a hold-out test set and run the results against a pre-crafted suite of expectations.</li>
+</ul>
+<p><strong>Improving team communication and data understanding.</strong></p>
+<ul>
+<li>Finally, we could start off by creating an empty expectations suite, that is: list all the columns, but don’t impose any checks on their values yet. </li>
+<li>Then, get together people who own the data or the business processes involved and ask them:</li>
+<li>What is the maximal monthly churn rate that is worrisome? </li>
+<li>How low does the website stickiness have to fall to trigger an alert? Such conversations can improve the data-related communication between the teams and the understanding of the data themselves in the company</li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Great Expectations <a href="https://docs.greatexpectations.io/docs/">official documentation</a>. </li>
+</ul>
+<p><strong>Testing LLMs</strong></p>
+<h2 id="testing-large-language-models-with-wb-and-giskard"><strong>Testing Large Language Models with W&amp;B and Giskard</strong></h2>
+<ul>
+<li>Combining W&amp;B with Giskard to deeply understand LLM behavior and avoid common pitfalls like hallucinations and injection attacks</li>
+<li>According to the<a href="https://www.giskard.ai/knowledge/owasp-top-10-for-llm-2023-understanding-the-risks-of-large-language-models"> Open Worldwide Application Security Project</a>, some of the most critical vulnerabilities that affect LLMs are prompt injection (when LLMs are manipulated to behave as the attacker wishes), sensitive information disclosure (when LLMs inadvertently leak confidential information), and hallucination (when LLMs generate inaccurate or inappropriate content).</li>
+<li>Giskard's scan feature ensures the identification of these vulnerabilities—and many others. </li>
+<li>The library generates a comprehensive report which quantifies these into interpretable metrics. The Giskard/W&amp;B integration allows the logging of both the report and metrics into W&amp;B, which in conjunction with the tracing, creates the ideal combination for building and debugging LLM apps.</li>
+</ul>
+<h4 id="giskards-vulnerability-scanning-for-llms"><strong>Giskard's vulnerability scanning for LLMs</strong></h4>
+<ul>
+<li><a href="https://www.giskard.ai/">Giskard</a> is an open-source testing framework dedicated to ML models, covering any Python model, from tabular to LLMs.</li>
+<li>Testing machine learning applications can be tedious: Where to start testing? Which tests to implement? What issues to cover? How do we implement the tests?</li>
+<li>With Giskard, data scientists can scan their model to find dozens of hidden vulnerabilities, instantaneously generate domain-specific tests, and leverage the Quality Assurance best practices of the open-source community.</li>
+<li>For more information, you can check Giskard's documentation following this<a href="https://docs.giskard.ai/en/latest/"> link</a>.</li>
+<li>Watch: <a href="https://www.youtube.com/watch?v=KeY6qPAvyq0">https://www.youtube.com/watch?v=KeY6qPAvyq0</a></li>
+<li>The better developer version: <a href="https://www.youtube.com/watch?v=rkjFFx_nXhU">https://www.youtube.com/watch?v=rkjFFx_nXhU</a></li>
+</ul>
+<h4 id="wb-traces-for-debugging-llms">**W&amp;B Traces for Debugging LLMs: **</h4>
+<ul>
+<li><a href="https://wandb.ai/">Weights &amp; Biases</a>, often referred to as wandb or even simply W&amp;B, is an MLOps platform that helps AI developers streamline their ML workflow from end to end.</li>
+<li>With W&amp;B, developers can monitor the progress of training their models in real-time, log key metrics and hyperparameters, and visualize results through interactive dashboards. It<a href="https://wandb.ai/site/solutions/wb-for-teams"> simplifies collaboration by enabling team members to share experiments and compare model performance</a>. For more information, you can check W&amp;B's documentation following this<a href="https://docs.wandb.ai/"> link</a>.</li>
+<li>In the context of LLMs, earlier this year, W&amp;B introduced a new debugging tool “W&amp;B Traces” designed to support ML practitioners working on prompt engineering for LLMs. </li>
+<li>It lets users visualize and drill down into every component and activity throughout the trace of the LLM pipeline execution. In addition, it enables the review of past results, identification and debugging of errors, gathering insights about the LLM’s behavior, and sharing insights.</li>
+<li>Tracing is invaluable, but how do we measure the quality of the outputs throughout the pipeline? </li>
+<li>Could there be hidden vulnerabilities that our carefully-crafted prompts may have inadvertently failed to counter? Is there a way to detect such vulnerabilities automatically? Would it be possible to log these issues into W&amp;B to complement the tracing?</li>
+<li>In a nutshell, the answer to all these questions is "yes." That's precisely the capability that Giskard brings to the table.</li>
+<li>Combining Weights &amp; Biases and Giskard, makes it possible to overcome this very challenge with this example available as a<a href="https://colab.research.google.com/github/giskard-ai/giskard/blob/main/docs/integrations/wandb/wandb-llm-example.ipynb"> Google Colab notebook</a>!</li>
+</ul>
+<p><strong>Using LLMs to perform Data Quality:</strong></p>
+<ul>
+<li>BirdiDQ<span style="text-decoration:underline;"> <a href="https://github.com/keshavaspanda/BirdiDQ">https://github.com/keshavaspanda/BirdiDQ</a></span>  is a simple, intuitive and user-friendly data quality application that allows you to run data quality checks on top of python based great expectation open source library using natural language queries. </li>
+<li>The idea is to type in your requests, and BirdiDQ will generate the appropriate GE method, run the quality control and return the results along with data docs you need. <a href="https://youtu.be/iPLSUL4SjBk">Demo</a></li>
+</ul>
+<p><strong>Using Large Language Models for Efficient Data Annotation and Model Fine-Tuning with Iterative Active Learning</strong></p>
+<p><img alt="alt_text" src="images/image47.png" title="image_tooltip" /></p>
+<p><a href="https://github.com/keshavaspanda/llm-data-annotation">https://github.com/keshavaspanda/llm-data-annotation</a></p>
+<p>Additional Resource for us to try out:</p>
+<h4 id="httpsgithubcomkeshavaspandallama-in-a-container"><strong><a href="https://github.com/keshavaspanda/llama-in-a-container">https://github.com/keshavaspanda/llama-in-a-container</a></strong></h4>
+<p><strong><span style="text-decoration:underline;">Section 8<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</span></strong></p>
+<h4 id="training-tuning-and-serving-up-llms-in-production"><strong>Training, Tuning and Serving up LLMs in production:</strong></h4>
+<h4 id="serving-up-llms-in-production"><strong>Serving up LLMs in production:</strong></h4>
+<ul>
+<li>OpenLLM is an open-source platform designed to facilitate the deployment and operation of large language models (LLMs) in real-world applications. </li>
+<li>With OpenLLM, you can run inference on any open-source LLM, deploy them on the cloud or on-premises, and build powerful AI applications.</li>
+<li><a href="https://github.com/bentoml/OpenLLM?tab=readme-ov-file">https://github.com/bentoml/OpenLLM?tab=readme-ov-file</a></li>
+</ul>
+<h4 id="trainingfine-tuning-large-language-models-llms-the-first-pass"><strong>Training/Fine-Tuning Large Language Models (LLMs) - The First Pass</strong></h4>
+<p><img alt="alt_text" src="images/image48.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>Comparison of the number of parameters of models. Just look at how big GPT-3 is. And nobody knows about GPT-4…
+</code></pre></div>
+<p><img alt="alt_text" src="images/image49.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>LLMs capabilities
+</code></pre></div>
+<ul>
+<li>Creating a local large language model (LLM) is a significant undertaking.</li>
+<li>It requires substantial computational resources and expertise in machine learning. </li>
+<li>It was not feasible to run local LLMs on your own local system because of the computational costs involved. </li>
+<li>However, with the advent of new software, GPT4All and LM-Studio can be used to create complete software packages that work locally. </li>
+<li>But let’s start with a HuggingFace Transformers source code example that shows you how to use the HuggingFace Libraries and PyTorch for LLMs (cloud-based, not local in this case):</li>
+</ul>
+<h2 id="consider-the-huggingface-transformers-example"><strong>Consider the HuggingFace Transformers Example</strong></h2>
+<ul>
+<li>This is a complete program that uses the GPT-2 model, GPT-2 tokenizer, and is fine-tuned on the AG NEWS dataset (a small dataset used for utility purposes) is given below and explained in code snippets. </li>
+<li>We can leverage the power of pre-trained models and fine-tune them on specific tasks.</li>
+<li>
+<p>Importing necessary libraries and modules: </p>
+<ul>
+<li>The script starts by importing the necessary libraries and modules. AG_NEWS is a news classification dataset from the “torchtext.datasets” package. AutoModelWithLMHead and AdamW are imported from the transformers library. </li>
+<li>AutoModelWithLMHead is a class that provides automatic access to pre-trained models with a language modeling head, and AdamW is a class that implements the AdamW optimizer, a variant of the Adam optimizer with weight decay.</li>
+</ul>
+<p>```</p>
+</li>
+</ul>
+<h2 id="from-torchtextdatasets-import-ag_news">from torchtext.datasets import AG_NEWS</h2>
+<h2 id="from-transformers-import-automodelwithlmhead-adamw">from transformers import AutoModelWithLMHead, AdamW</h2>
+<h2 id="from-transformers-import-autotokenizer">from transformers import AutoTokenizer</h2>
+<div class="highlight"><pre><span></span><code>```
+
+
+* **Setting up the tokenizer:** The script uses the AutoTokenizer class from the transformers library to load the tokenizer associated with the “gpt2” model. The tokenizer is responsible for converting input text into a format that the model can understand. This includes splitting the text into tokens (words, subwords, or characters), mapping the tokens to their corresponding IDs in the model’s vocabulary, and creating the necessary inputs for the model (like attention masks).
+* tokenizer = AutoTokenizer.from_pretrained(&quot;gpt2&quot;)
+* **Setting the number of epochs:** The script sets the number of epochs for training to 50. An epoch is one complete pass through the entire training dataset. The number of epochs is a hyperparameter that you can tune. Training for more epochs can lead to better results, but it also increases the risk of overfitting and requires more computational resources.
+
+```
+</code></pre></div>
+<h2 id="epochs-50">EPOCHS = 50</h2>
+<div class="highlight"><pre><span></span><code>```
+
+
+* **Preprocessing the data: **The preprocess_data function is defined to preprocess the data. It takes an iterator over the data and encodes the text in each item using the tokenizer. The AG_NEWS dataset is then loaded and preprocessed. The dataset is split into ‘train’ and the text from each item is encoded. Encoding the text involves splitting it into tokens, mapping the tokens to their IDs in the model’s vocabulary, and creating the necessary inputs for the model.
+
+```
+</code></pre></div>
+<h2 id="def-preprocess_datadata_iter">def preprocess_data(data_iter):</h2>
+<h2 id="data-tokenizerencodetext-for-_-text-in-data_iter">data = [tokenizer.encode(text) for _, text in data_iter]</h2>
+<h2 id="return-data">return data</h2>
+<h2 id="train_iter-ag_newssplittrain">train_iter = AG_NEWS(split='train')</h2>
+<h2 id="train_data-preprocess_datatrain_iter">train_data = preprocess_data(train_iter)</h2>
+<div class="highlight"><pre><span></span><code>```
+</code></pre></div>
+<ul>
+<li>
+<p><strong>Setting up the model and optimizer:</strong> </p>
+<ul>
+<li>The script loads the pre-trained “gpt2” model using the AutoModelWithLMHead class and sets up the AdamW optimizer with the model’s parameters. The model is a transformer-based model with a language modeling head, which means it’s designed to generate text. The AdamW optimizer is a variant of the Adam optimizer with weight decay, which can help prevent overfitting.</li>
+</ul>
+<p>```</p>
+</li>
+</ul>
+<h2 id="model-automodelwithlmheadfrom_pretrainedgpt2">model = AutoModelWithLMHead.from_pretrained("gpt2")</h2>
+<h2 id="optimizer-adamwmodelparameters">optimizer = AdamW(model.parameters())</h2>
+<h2 id="modeltrain">model.train()</h2>
+<h2 id="for-epoch-in-rangeepochs">for epoch in range(EPOCHS):</h2>
+<h2 id="for-batch-in-train_data">for batch in train_data:</h2>
+<h2 id="outputs-modelbatch">outputs = model(batch)</h2>
+<h2 id="loss-outputsloss">loss = outputs.loss</h2>
+<h2 id="lossbackward">loss.backward()</h2>
+<h2 id="optimizerstep">optimizer.step()</h2>
+<h2 id="optimizerzero_grad">optimizer.zero_grad()</h2>
+<div class="highlight"><pre><span></span><code>```
+</code></pre></div>
+<ul>
+<li><strong>Training the model:</strong> The script trains the model for the specified number of epochs. In each epoch, it iterates over the batches of training data, feeds each batch to the model, computes the loss, performs backpropagation with loss.backward(), and updates the model’s parameters with optimizer.step(). It also resets the gradients with optimizer.zero_grad(). This is a standard training loop for PyTorch models.</li>
+<li>
+<p><strong>Generating text:</strong> After training, the script uses the model to generate text. It starts by encoding a prompt using the tokenizer, then feeds this encoded prompt to the model’s generate method. The output of the generate() method is a sequence of token IDs, which is then decoded back into text using the tokenizer.</p>
+<p>```</p>
+</li>
+</ul>
+<h2 id="prompt-tokenizerencodewrite-a-summary-of-the-new-features-in-the-latest-release-of-the-julia-programming-language-return_tensorspt">prompt = tokenizer.encode("Write a summary of the new features in the latest release of the Julia Programming Language", return_tensors="pt")</h2>
+<h2 id="generated-modelgenerateprompt">generated = model.generate(prompt)</h2>
+<h2 id="generated_text-tokenizerdecodegenerated0">generated_text = tokenizer.decode(generated[0])</h2>
+<div class="highlight"><pre><span></span><code>```
+</code></pre></div>
+<ul>
+<li>
+<p><strong>Saving the generated text: </strong>Finally, the script saves the generated text to a file named “generated.txt”. This is done using Python’s built-in file handling functions.</p>
+<p>```</p>
+</li>
+</ul>
+<h2 id="with-opengeneratedtxt-w-as-f">with open("generated.txt", "w") as f:</h2>
+<h2 id="fwritegenerated_text">f.write(generated_text)</h2>
+<div class="highlight"><pre><span></span><code>```
+</code></pre></div>
+<ul>
+<li>This script is a good example of how to fine-tune a pre-trained language model on a specific task. </li>
+<li>Fine-tuning a large model like GPT-2 can be computationally intensive and may require a powerful machine or cloud-based resources. </li>
+<li><em>This script doesn’t include some important steps like splitting the data into training and validation sets, shuffling the data, and batching the data.</em> _These steps are crucial for training a robust model. _</li>
+<li>
+<p>The entire program is given below:</p>
+<p>```</p>
+</li>
+</ul>
+<h2 id="from-torchtextdatasets-import-ag_news_1">from torchtext.datasets import AG_NEWS</h2>
+<h2 id="from-transformers-import-automodelwithlmhead-adamw_1">from transformers import AutoModelWithLMHead, AdamW</h2>
+<h2 id="from-transformers-import-autotokenizer_1">from transformers import AutoTokenizer</h2>
+<h2 id="tokenizer-autotokenizerfrom_pretrainedgpt2">tokenizer = AutoTokenizer.from_pretrained("gpt2")</h2>
+<h2 id="epochs-50_1">EPOCHS = 50</h2>
+<h2 id="def-preprocess_datadata_iter_1">def preprocess_data(data_iter):</h2>
+<h2 id="data-tokenizerencodetext-for-_-text-in-data_iter_1">data = [tokenizer.encode(text) for _, text in data_iter]</h2>
+<h2 id="return-data_1">return data</h2>
+<h2 id="train_iter-ag_newssplittrain_1">train_iter = AG_NEWS(split='train')</h2>
+<h2 id="train_data-preprocess_datatrain_iter_1">train_data = preprocess_data(train_iter)</h2>
+<h2 id="model-automodelwithlmheadfrom_pretrainedgpt2_1">model = AutoModelWithLMHead.from_pretrained("gpt2")</h2>
+<h2 id="optimizer-adamwmodelparameters_1">optimizer = AdamW(model.parameters())</h2>
+<h2 id="modeltrain_1">model.train()</h2>
+<h2 id="for-epoch-in-rangeepochs_1">for epoch in range(EPOCHS):</h2>
+<h2 id="for-batch-in-train_data_1">for batch in train_data:</h2>
+<h2 id="outputs-modelbatch_1">outputs = model(batch)</h2>
+<h2 id="loss-outputsloss_1">loss = outputs.loss</h2>
+<h2 id="lossbackward_1">loss.backward()</h2>
+<h2 id="optimizerstep_1">optimizer.step()</h2>
+<h2 id="optimizerzero_grad_1">optimizer.zero_grad()</h2>
+<h2 id="prompt-tokenizerencodewrite-a-summary-of-the-new-features-in-the-latest-release-of-the-julia-programming-language-return_tensorspt_1">prompt = tokenizer.encode("Write a summary of the new features in the latest release of the Julia Programming Language", return_tensors="pt")</h2>
+<h2 id="generated-modelgenerateprompt_1">generated = model.generate(prompt)</h2>
+<h2 id="generated_text-tokenizerdecodegenerated0_1">generated_text = tokenizer.decode(generated[0])</h2>
+<h2 id="with-opengeneratedtxt-w-as-f_1">with open("generated.txt", "w") as f:</h2>
+<h2 id="fwritegenerated_text_1">f.write(generated_text)</h2>
+<div class="highlight"><pre><span></span><code>```
+</code></pre></div>
+<h2 id="there-are-two-packaged-solutions-for-local-llms-and-many-more-popping-up-everyday-two-of-them-are-the-best-one-is-lm-studio-the-other-is-httpsgpt4allioindexhtml">There are two packaged solutions for Local LLMs (and many more popping up, everyday). Two of them are the best. One is LM-Studio. The other is <a href="https://gpt4all.io/index.html">https://gpt4all.io/index.html</a></h2>
+<ul>
+<li><em>This is the best for those if you want a completely open-source on-premises system. But you need to have at least 32 GB of local RAM, 16 GB GPU RAM, a 3+ Ghz multicore(the more, the better) processor, and a local SSD.  LLMs are computationally, extremely expensive!</em></li>
+<li>There’s a lot more to LLM models than just chat</li>
+<li>Given the expensive;y daunting computational requirements for fine-tuning musical and pictures and audio for LLMs we are not going to run them. </li>
+<li>Some popular, already built and ready-to-go solutions as well as some interesting source material are:</li>
+</ul>
+<h2 id="audio-llms"><strong>Audio LLMs</strong></h2>
+<ul>
+<li><a href="https://www.assemblyai.com/docs/guides/processing-audio-with-llms-using-lemur">https://www.assemblyai.com/docs/guides/processing-audio-with-llms-using-lemur</a></li>
+<li>AudioGPT Research Paper — <a href="https://arxiv.org/abs/2304.12995">https://arxiv.org/abs/2304.12995</a></li>
+<li>Tango <a href="https://tango-web.github.io/">https://tango-web.github.io/</a></li>
+<li><a href="https://blog.google/technology/ai/musiclm-google-ai-test-kitchen/">https://blog.google/technology/ai/musiclm-google-ai-test-kitchen/</a></li>
+</ul>
+<h2 id="image-llms"><strong>Image LLMs</strong></h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/generating-images-large-language-model-gill-arun-krishnan">https://www.linkedin.com/pulse/generating-images-large-language-model-gill-arun-krishnan</a></li>
+<li><strong>Stable Diffusion</strong></li>
+<li><strong>DALL E-1,2,3</strong></li>
+<li><strong>MidJourney</strong></li>
+<li>Bing Image Creator</li>
+</ul>
+<h2 id="multimodal-llms"><strong>Multimodal LLMs</strong></h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2306.09093">https://arxiv.org/abs/2306.09093</a> Macaw-LLM research paper. </li>
+<li><a href="https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models">https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models</a></li>
+<li><a href="https://openai.com/research/gpt-4">https://openai.com/research/gpt-4</a> </li>
+</ul>
+<h2 id="general-llm-resources"><strong>General LLM Resources</strong></h2>
+<ul>
+<li><a href="https://beebom.com/best-large-language-models-llms/">https://beebom.com/best-large-language-models-llms/</a></li>
+<li><a href="https://roadmap.sh/guides/free-resources-to-learn-llms">https://roadmap.sh/guides/free-resources-to-learn-llms</a></li>
+<li><a href="https://github.com/Hannibal046/Awesome-LLM">https://github.com/Hannibal046/Awesome-LLM</a></li>
+<li><a href="https://medium.com/@abonia/best-llm-and-llmops-resources-for-2023-75e96ac37feb">https://medium.com/@abonia/best-llm-and-llmops-resources-for-2023-75e96ac37feb</a></li>
+<li><a href="https://learn.deeplearning.ai/">https://learn.deeplearning.ai/</a> </li>
+</ul>
+<h2 id="_10"></h2>
+<div class="highlight"><pre><span></span><code>**Fine-Tuning Your LLM - A Revisit**
+</code></pre></div>
+<ul>
+<li>Again. fine-tuning is the process of continuing the training of a pre-trained LLM on a specific dataset. </li>
+<li>You might ask why we need to train the model further if we can already add data using RAG. </li>
+<li>
+<p>The simple answer is that only fine-tuning can tailor your model to understand a specific domain or define its “style”. </p>
+<p>:</p>
+</li>
+</ul>
+<p><img alt="alt_text" src="images/image50.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>Classical approach of fine-tuning on domain specific data (all icons from [flaticon](http://flaticon.com/))
+</code></pre></div>
+<ol>
+<li>Take a trained LLM, sometimes called Base LLM. You can download them from <a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard">HuggingFace</a>.</li>
+<li>Prepare your training data. You only need to compile instructions and responses. <a href="https://huggingface.co/datasets/databricks/databricks-dolly-15k">Here’s an example</a> of such a dataset. You can also <a href="https://www.promptingguide.ai/applications/generating">generate synthetic data</a> using GPT-4.</li>
+<li>Choose a suitable fine-tuning method. <a href="https://github.com/microsoft/LoRA">LoRA</a> and <a href="https://github.com/artidoro/qlora">QLoRA</a> are currently popular.</li>
+<li>Fine-tune the model on new data.</li>
+</ol>
+<h3 id="_11"></h3>
+<div class="highlight"><pre><span></span><code>**When to Use**
+</code></pre></div>
+<ul>
+<li><strong>Niche Applications:</strong> When the application deals with specialized or unconventional topics. For example, legal document applications that need to understand and handle legal jargon.</li>
+<li><strong>Custom Language Styles:</strong> For applications requiring a specific tone or style. For example, creating an <a href="https://beta.character.ai/">AI character</a> whether it’s a celebrity or a character from a book.</li>
+</ul>
+<h3 id="_12"></h3>
+<div class="highlight"><pre><span></span><code>**When NOT to Use**
+</code></pre></div>
+<ul>
+<li><strong>Broad Applications:</strong> Where the scope of the application is general and doesn’t require specialized knowledge.</li>
+<li><strong>Limited Data:</strong> Fine-tuning requires a significant amount of relevant data. However, you can always <a href="https://www.confident-ai.com/blog/how-to-generate-synthetic-data-using-llms-part-1">generate them with another LLM</a>. For example, the <a href="https://github.com/gururise/AlpacaDataCleaned">Alpaca dataset</a> of 52k LLM-generated instruction-response pairs was used to create the first finetuning <a href="https://arxiv.org/abs/2302.13971">Llama v1</a> model earlier this year.</li>
+</ul>
+<h3 id="_13"></h3>
+<div class="highlight"><pre><span></span><code>**Fine-tuning LLM**
+
+
+Let us look at a high-level library, [Lit-GPT](https://github.com/Lightning-AI/lit-gpt), which hides all complexities, hence doesn’t allow for much customization of the training process, but one can quickly conduct experiments and get initial results.
+
+
+You’ll need just a few lines of code:
+
+
+```
+# 1. Download the model:
+python scripts/download.py --repo_id meta-llama/Llama-2-7b
+
+# 2. Convert the checkpoint to the lit-gpt format:
+python scripts/convert_hf_checkpoint.py --checkpoint_dir checkpoints/llama
+
+# 3. Generate an instruction tuning dataset:
+python scripts/prepare_alpaca.py  # it should be your dataset
+
+# 4. Run the finetuning script
+python finetune/lora.py \
+   --checkpoint_dir checkpoints/llama/
+   --data_dir your_data_folder/
+   --out_dir my_finetuned_model/
+```
+
+
+
+And that’s it! Your training process will start:
+</code></pre></div>
+<p><img alt="alt_text" src="images/image51.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>_This  takes approximately **10 hours** and **30 GB** memory to fine-tune Falcon-7B on a single A100 GPU._
+</code></pre></div>
+<ul>
+<li>The fine-tuning process is quite complex and to get better results, you’ll need to understand various adapters, their parameters, and much more. </li>
+<li>However, even after such a simple iteration, you will have a new model that follows your instructions.</li>
+</ul>
+<h3 id="_14"></h3>
+<div class="highlight"><pre><span></span><code>**Some References to chase down:**
+</code></pre></div>
+<ul>
+<li><a href="https://medium.com/better-programming/unleash-your-digital-twin-how-fine-tuning-llm-can-create-your-perfect-doppelganger-b5913e7dda2e">Create a Clone of Yourself With a Fine-tuned LLM</a> — an article about collecting datasets, using parameters, and  useful tips on fine-tuning.</li>
+<li><a href="https://lightning.ai/pages/community/article/understanding-llama-adapters/">Understanding Parameter-Efficient Fine-tuning of Large Language Models</a> — an excellent tutorial to get into the details of the concept of fine-tuning and popular parameter-efficient alternatives.</li>
+<li><a href="https://lightning.ai/pages/community/lora-insights/">Fine-tuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments</a> — one of my favorite articles for understanding the capabilities of LoRA.</li>
+<li><a href="https://platform.openai.com/docs/guides/fine-tuning">OpenAI Fine-tuning</a> — if you want to fine-tune GPT-3.5 with minimal effort.</li>
+</ul>
+<h2 id="_15"></h2>
+<div class="highlight"><pre><span></span><code>**Deploying Your LLM Application in Production**
+</code></pre></div>
+<p><img alt="alt_text" src="images/image52.png" title="image_tooltip" /></p>
+<ul>
+<li>There are a huge number of frameworks that specialize in deploying large language models with</li>
+<li>Lots of pre-built wrappers and integrations.</li>
+<li>A vast selection of available models.</li>
+<li>A multitude of internal optimizations.</li>
+<li>Rapid prototyping.</li>
+</ul>
+<h3 id="_16"></h3>
+<div class="highlight"><pre><span></span><code>**Choosing the Right Framework**
+</code></pre></div>
+<ul>
+<li>The choice of framework for deploying an LLM application depends on various factors, including the size of the model, the scalability requirements of the application, and the deployment environment. </li>
+<li>Heres a  cheat sheet:</li>
+</ul>
+<p><img alt="alt_text" src="images/image53.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>You can get a more detailed overview of the existing solutions here [7 Frameworks for Serving LLMs](https://medium.com/better-programming/frameworks-for-serving-llms-60b7f7b23407)
+</code></pre></div>
+<p><img alt="alt_text" src="images/image54.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>    Comparison of frameworks for LLMs inference
+</code></pre></div>
+<h3 id="_17"></h3>
+<div class="highlight"><pre><span></span><code>**Example Code for Deployment**
+</code></pre></div>
+<ul>
+<li>Let’s move from theory to practice and try to deploy LLaMA-2 using <a href="https://github.com/huggingface/text-generation-inference">Text Generation Inference</a>. </li>
+<li>
+<p>And, as you might have guessed, you’ll need just a few lines of code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a># 1. Create a folder where your model will be stored:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>mkdir data
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a># 2. Run Docker container (launch RestAPI service):
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>docker run --gpus all --shm-size 1g -p 8080:80 \
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>   -v $volume:/data \
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>   ghcr.io/huggingface/text-generation-inference:1.1.0
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>   --model-id meta-llama/Llama-2-7b
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a># 3. And now you can make requests:
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>curl 127.0.0.1:8080/generate \
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>   -X POST \
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>   -d &#39;{&quot;inputs&quot;:&quot;Tell me a joke!&quot;,&quot;parameters&quot;:{&quot;max_new_tokens&quot;:20}}&#39; \
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>   -H &#39;Content-Type: application/json&#39;
+</code></pre></div>
+<ul>
+<li>That’s it! You’ve set up a RestAPI service with built-in logging, Prometheus endpoint for monitoring, token streaming, and your model is fully optimized. </li>
+</ul>
+</li>
+</ul>
+<p><img alt="alt_text" src="images/image55.png" title="image_tooltip" /></p>
+<div class="highlight"><pre><span></span><code>API Documentation
+</code></pre></div>
+<h3 id="_18"></h3>
+<div class="highlight"><pre><span></span><code>**References:**
+</code></pre></div>
+<ul>
+<li><a href="https://medium.com/better-programming/frameworks-for-serving-llms-60b7f7b23407">7 Frameworks for Serving LLMs </a>— comprehensive guide into LLMs inference and serving with detailed comparison.</li>
+<li><a href="https://huggingface.co/inference-endpoints">Inference Endpoints</a> — a product from HuggingFace that will allow you to deploy any LLMs in a few clicks. A good choice when you need rapid prototyping.</li>
+</ul>
+<h2 id="_19"></h2>
+<div class="highlight"><pre><span></span><code>**To get in a little deeper**
+</code></pre></div>
+<ul>
+<li>We’ve covered the basic concepts needed for developing LLM-based applications, there are still some aspects you’ll likely encounter in the future. Here are  a few useful reference:</li>
+</ul>
+<h3 id="_20"></h3>
+<div class="highlight"><pre><span></span><code>**Optimization**
+</code></pre></div>
+<ul>
+<li>When you launch your first model, you inevitably find it’s not as fast as you’d like and consumes a lot of resources and you’ll need to understand how it can be optimized.</li>
+<li><a href="https://medium.com/better-programming/speed-up-llm-inference-83653aa24c47">7 Ways To Speed Up Inference of Your Hosted LLMs</a> — techniques to speed up inference of LLMs to increase token generation speed and reduce memory consumption.</li>
+<li><a href="https://lightning.ai/pages/community/tutorial/pytorch-memory-vit-llm/">Optimizing Memory Usage for Training LLMs in PyTorch</a> — article provides a series of techniques that can reduce memory consumption in PyTorch by approximately 20x without sacrificing modeling performance and prediction accuracy.</li>
+</ul>
+<h3 id="_21"></h3>
+<div class="highlight"><pre><span></span><code>**Evaluating**
+</code></pre></div>
+<ul>
+<li>Suppose you have a fine-tuned model you need to be sure that its quality has improved.  What metrics should we use to check quality?</li>
+<li><a href="https://explodinggradients.com/all-about-evaluating-large-language-models">All about evaluating Large language models</a> — a good overview article about benchmarks and metrics.</li>
+<li><a href="https://github.com/openai/evals">evals</a> — the most popular framework for evaluating LLMs and LLM systems.</li>
+</ul>
+<h3 id="_22"></h3>
+<div class="highlight"><pre><span></span><code>**Vector Databases**
+</code></pre></div>
+<ul>
+<li>If you work with RAG, at some point, you’ll move from storing vectors in memory to a database. </li>
+<li>For this, it’s important to understand what’s currently on the market and its limitations.</li>
+<li><a href="https://towardsdatascience.com/all-you-need-to-know-about-vector-databases-and-how-to-use-them-to-augment-your-llm-apps-596f39adfedb">All You Need to Know about Vector Databases</a> — a step-by-step guide by  \
+<a href="https://medium.com/u/3ab8d3143e32?source=post_page-----5c45708156bc--------------------------------">Dominik Polzer \
+</a> to discover and harness the power of vector databases.</li>
+<li><a href="https://benchmark.vectorview.ai/vectordbs.html">Picking a vector database: a comparison and guide for 2023</a> — comparison of Pinecone, Weviate, Milvus, Qdrant, Chroma, Elasticsearch and PGvector databases.</li>
+</ul>
+<h3 id="_23"></h3>
+<div class="highlight"><pre><span></span><code>**LLM Agents**
+</code></pre></div>
+<ul>
+<li>One of  the most promising developments in LLMs are LLM Agents i f you want multiple models to work together. </li>
+<li>The following links are worth going through</li>
+<li><a href="https://github.com/paitesanshi/llm-agent-survey#-more-comprehensive-summarization">A Survey on LLM-based Autonomous Agents</a> — this is probably the most comprehensive overview of LLM based agents.</li>
+<li><a href="https://github.com/microsoft/autogen">autogen</a> — is a framework that enables the development of LLM applications using multiple agents that can converse with each other to solve tasks.</li>
+<li><a href="https://github.com/xlang-ai/OpenAgents">OpenAgents </a>— an open platform for using and hosting language agents in the wild.</li>
+</ul>
+<h3 id="_24"></h3>
+<div class="highlight"><pre><span></span><code>**Reinforcement Learning from Human Feedback (RLHF)**
+</code></pre></div>
+<ul>
+<li>As soon as you allow users access to your model, you start taking responsibility. </li>
+<li>What if it responds rudely? Or reveals bomb-making ingredients? To avoid this, check out these articles:</li>
+<li><a href="https://huggingface.co/blog/rlhf">Illustrating Reinforcement Learning from Human Feedback (RLHF)</a> — an overview article that details the RLHF technology.</li>
+<li><a href="https://github.com/allenai/RL4LMs">RL4LMs</a> — a modular RL library to fine-tune language models to human preferences.</li>
+<li><a href="https://github.com/huggingface/trl">TRL </a>— a set of tools to train transformer language models with Reinforcement Learning, from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step.</li>
+</ul>
+<p><strong>Summary:</strong></p>
+<p><img alt="alt_text" src="images/image56.png" title="image_tooltip" /></p>
+<ul>
+<li>The material covered today is broad but is the technology of the future. </li>
+<li>Junior Programmers, Artists, ML Engineers, Data Processing Analysts, Beginner Data Scientists, and practically every other digital job should be learning this technology. There is a lot of scope and opportunity. </li>
+<li>Generative AI is the future of the Digital Media World. Artists are feeling the impact today. A similar situation is looming for junior-level software engineers. </li>
+<li>But the solution is simple: Skill up! Help someone else Skill up! Regain Control!</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://spanda.io"  target="_blank" rel="noopener">Spanda.io</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://ranga-rangarajan.github.io/spanda-bootcamp/" target="_blank" rel="noopener" title="ranga-rangarajan.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      
+    
+  </body>
+</html>
